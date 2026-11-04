@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192"
+authors:
+  - name: "Moki&Julio"
+date-released: 2026-11-04
+version: "1.0"
+repository-code: "https://github.com/Hashirama1337s/airy-edge-hydrodynamics"
+license: CC-BY-4.0
+keywords:
+  - large D
+  - holography
+  - hydrodynamics
+  - radius of convergence
+  - quasinormal modes
+  - Airy function
+abstract: >-
+  Large-d law for the critical point that limits shear hydrodynamics of the AdS black brane: approach to (-2, i) as
+  d^(-1/3) with a coefficient from the first zero of Ai'^2 - U Ai^2 (formal matched asymptotics), a no-fit forward test
+  at d = 8192-32768, and a numerical radius bound at d = 512, 1024 and 8192. Data, code and sealed-test records included.
+references:
+  - type: article
+    title: "The Gregory-Laflamme threshold to order 1/n^12 and its resummation to AdS screening masses"
+    authors:
+      - name: "Moki&Julio"
+    doi: "10.5281/zenodo.23940227"
