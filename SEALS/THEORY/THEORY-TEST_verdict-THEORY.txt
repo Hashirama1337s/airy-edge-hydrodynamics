@@ -1,0 +1,12 @@
+T1 d=8192 |dq2| 8.14e-06 (bar 1.6e-5) |dw| 4.15e-06 (bar 8.3e-6) -> ok
+T1 d=16384 |dq2| 2.58e-06 (bar 5.1e-6) |dw| 1.31e-06 (bar 2.6e-6) -> ok
+T1 d=32768 |dq2| 8.19e-07 (bar 1.6e-6) |dw| 4.15e-07 (bar 8.2e-7) -> ok
+T2 d=8192 |dq2| 9.65e-08 (bar 5.0e-6) |dw| 4.98e-08 (bar 1.2e-6) -> ok
+T2 d=16384 |dq2| 4.49e-08 (bar 2.0e-6) |dw| 2.37e-08 (bar 4.8e-7) -> ok
+T2 d=32768 |dq2| 1.84e-08 (bar 7.4e-7) |dw| 9.91e-09 (bar 1.8e-7) -> ok
+T3 exponent 1.0204121835104674 HOLDS
+T4 (as sealed, mis-set) {8192: 0.10759861222985442, 16384: 0.08610852606897454, 32768: 0.06879617219546151} FAILED
+T4prime HOLDS
+T5 HOLDS
+{'T1': 'HOLDS', 'T2': 'HOLDS', 'T3': 'HOLDS', 'T4': 'FAILED', 'T4prime': 'HOLDS', 'T5': 'HOLDS'}
+memcap: exit 0, peak 0.40 GB of 2.00 GB cap
