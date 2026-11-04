@@ -1,0 +1,152 @@
+{
+ "d4": {
+  "q2": [
+   "1.890646861152505677502981003",
+   "1.171150523650781022093714966"
+  ],
+  "w": [
+   "1.443641408408432121742481592",
+   "-1.069224977597582841300126392"
+  ]
+ },
+ "track": {
+  "256": {
+   "q2": [
+    "-1.800300430324147764706035055",
+    "0.8840998308013388011939937565"
+   ],
+   "w": [
+    "0.4405397285316820394534239250",
+    "0.9098706101485894055615116246"
+   ],
+   "on_sheet": true,
+   "nearest_in_census": true,
+   "loop_closure": "0.00956"
+  },
+  "512": {
+   "q2": [
+    "-1.854341963762432912963536626",
+    "0.6916701080256560489465511300"
+   ],
+   "w": [
+    "0.3451077962932944818825439076",
+    "0.9317549083344818958763518932"
+   ],
+   "on_sheet": true,
+   "nearest_in_census": null,
+   "loop_closure": "0.00678"
+  },
+  "1024": {
+   "q2": [
+    "-1.890172119611407673806228978",
+    "0.5439416103393120550248563319"
+   ],
+   "w": [
+    "0.2716458422321737683537865877",
+    "0.9472783307719039231414541471"
+   ],
+   "on_sheet": true,
+   "nearest_in_census": null,
+   "loop_closure": "0.00481"
+  },
+  "2048": {
+   "q2": [
+    "-1.915498185189559307516161280",
+    "0.4292474109128070436496707949"
+   ],
+   "w": [
+    "0.2144842932582166827458144487",
+    "0.9588099127307222222034609127"
+   ],
+   "on_sheet": true,
+   "nearest_in_census": null,
+   "loop_closure": "0.00341"
+  },
+  "4096": {
+   "q2": [
+    "-1.934189199124769120712016677",
+    "0.3394831374353999347683897112"
+   ],
+   "w": [
+    "0.1696832069757183856086273479",
+    "0.9676126357413123164756210949"
+   ],
+   "on_sheet": true,
+   "nearest_in_census": null,
+   "loop_closure": "0.00243"
+  }
+ },
+ "c1": {
+  "256": {
+   "q2": [
+    "-1.14752641916065885",
+    "0"
+   ],
+   "w": [
+    "0",
+    "-0.0197295349779130957"
+   ],
+   "on_sheet": false,
+   "loop_closure": "6.2e-16",
+   "hydro_root_distance_at_loop_wfr": "0.580"
+  },
+  "512": {
+   "q2": [
+    "-1.09209316156896977",
+    "0"
+   ],
+   "w": [
+    "0",
+    "-0.00978122918499357610"
+   ],
+   "on_sheet": false,
+   "loop_closure": "5.8e-15",
+   "hydro_root_distance_at_loop_wfr": "0.544"
+  },
+  "1024": {
+   "q2": [
+    "-1.05772589678195867",
+    "0"
+   ],
+   "w": [
+    "0",
+    "-0.00486464369386756867"
+   ],
+   "on_sheet": false,
+   "loop_closure": "4.0e-15",
+   "hydro_root_distance_at_loop_wfr": "0.523"
+  },
+  "2048": {
+   "q2": [
+    "-1.03628058920677033",
+    "0"
+   ],
+   "w": [
+    "0",
+    "-0.00242409123576156496"
+   ],
+   "on_sheet": false,
+   "loop_closure": "2.8e-15",
+   "hydro_root_distance_at_loop_wfr": "0.510"
+  },
+  "4096": {
+   "q2": [
+    "-1.02283908100966864",
+    "0"
+   ],
+   "w": [
+    "0",
+    "-0.00120941745377045551"
+   ],
+   "on_sheet": false,
+   "loop_closure": "3.4e-15",
+   "hydro_root_distance_at_loop_wfr": "0.502"
+  }
+ },
+ "digits": {
+  "d4": "28 significant (two runs 110/150 bits differ by 1e-30)",
+  "track": "28 significant (110 vs 150 bits, different step ratio and matching radius: differ by <=6e-32)",
+  "c1": "18 significant (128 vs 176 bits: q2 agree >=25 digits, w agree >=19 digits relative to |w|; Im q2 and Re w vanish by symmetry)"
+ },
+ "census": "d=256: full census (37 rays theta in (0,pi) + mirror, radial step 0.04 to |q2|=3.2, 755 seeds from hydro partner estimates, 2D Newton): 24 distinct critical points with |q2|<3 found, all with |q2| >= 2.00567 (tracked point = smallest, lowest member of a ladder at Re q2 ~ -1.8..-1.87). c1 (|q2|=1.148) is closer to the origin but its loop test shows the radially continued hydro root does not take part (closure 6e-16, hydro root 0.58 away in wfr). => nearest_in_census true at d=256. d=512..4096: full census NOT run (time budget); only loop tests of the tracked point (on_sheet true, closure 6.8e-3, 4.8e-3, 3.4e-3, 2.4e-3, scaling as d^-1/2) and of c1 (not on sheet at every d), so nearest_in_census = null there. on_sheet criterion: hydro root continued radially from q2=0.05 to a loop of radius 0.02 around the point does not return to itself after one turn (160 steps); numerical closure noise ~1e-15."
+}
