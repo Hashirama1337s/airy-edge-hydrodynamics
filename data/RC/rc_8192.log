@@ -1,0 +1,66 @@
+  [rays d=8192] it 25 calls 25 51s active 102 minprog 0.2102 rej 324
+  [rays d=8192] it 50 calls 50 109s active 60 minprog 0.5309 rej 324
+  [rays d=8192] it 75 calls 75 164s active 51 minprog 0.8461 rej 325
+  [rays d=8192] it 100 calls 100 204s active 3 minprog 0.9765 rej 327
+rays done 228s calls 120 stuck []
+  ray  0 th=0.0000 jumpA=1.88e-07 jumpB=1.88e-07 minsp=5.45e-04 stepsA=48 rejA=5 rejB=3 |A-B| Rin=2.7e-16 Rout=2.0e-15
+  ray  1 th=0.0628 jumpA=2.16e-07 jumpB=2.16e-07 minsp=5.45e-04 stepsA=48 rejA=5 rejB=3 |A-B| Rin=1.7e-15 Rout=1.5e-15
+  ray  2 th=0.1257 jumpA=1.43e-07 jumpB=9.37e-08 minsp=5.44e-04 stepsA=48 rejA=5 rejB=3 |A-B| Rin=4.0e-16 Rout=2.6e-15
+  ray  3 th=0.1885 jumpA=1.40e-07 jumpB=1.04e-07 minsp=5.42e-04 stepsA=47 rejA=4 rejB=3 |A-B| Rin=1.4e-15 Rout=7.9e-16
+  ray  4 th=0.2513 jumpA=1.89e-07 jumpB=1.89e-07 minsp=5.40e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=5.5e-15 Rout=4.9e-15
+  ray  5 th=0.3142 jumpA=1.39e-07 jumpB=9.65e-08 minsp=5.37e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=3.4e-15 Rout=1.4e-14
+  ray  6 th=0.3770 jumpA=1.42e-07 jumpB=8.54e-08 minsp=5.33e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.4e-14 Rout=9.4e-15
+  ray  7 th=0.4398 jumpA=2.98e-07 jumpB=2.86e-07 minsp=5.28e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=7.5e-15 Rout=8.0e-15
+  ray  8 th=0.5027 jumpA=1.80e-07 jumpB=1.80e-07 minsp=5.22e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.9e-14 Rout=6.3e-15
+  ray  9 th=0.5655 jumpA=2.86e-07 jumpB=2.86e-07 minsp=5.16e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=4.1e-14 Rout=1.8e-14
+  ray 10 th=0.6283 jumpA=4.23e-07 jumpB=4.23e-07 minsp=5.09e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=3.0e-14 Rout=3.9e-14
+  ray 11 th=0.6912 jumpA=5.05e-07 jumpB=4.81e-07 minsp=5.02e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.0e-14 Rout=3.1e-14
+  ray 12 th=0.7540 jumpA=1.74e-07 jumpB=9.32e-08 minsp=4.94e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=5.2e-14 Rout=4.2e-14
+  ray 13 th=0.8168 jumpA=3.13e-07 jumpB=3.13e-07 minsp=4.85e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.7e-14 Rout=4.7e-14
+  ray 14 th=0.8796 jumpA=3.00e-07 jumpB=3.00e-07 minsp=4.76e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=5.5e-14 Rout=3.4e-14
+  ray 15 th=0.9425 jumpA=2.05e-07 jumpB=2.04e-07 minsp=4.67e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.7e-14 Rout=3.0e-14
+  ray 16 th=1.0053 jumpA=2.67e-07 jumpB=2.67e-07 minsp=4.57e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=3.2e-14 Rout=3.8e-14
+  ray 17 th=1.0681 jumpA=2.34e-07 jumpB=1.30e-07 minsp=4.46e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.3e-14 Rout=1.5e-14
+  ray 18 th=1.1310 jumpA=2.54e-07 jumpB=2.54e-07 minsp=4.36e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.6e-14 Rout=4.4e-14
+  ray 19 th=1.1938 jumpA=4.35e-07 jumpB=3.72e-07 minsp=4.25e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=3.0e-14 Rout=2.4e-14
+  ray 20 th=1.2566 jumpA=2.99e-07 jumpB=2.84e-07 minsp=4.13e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=7.9e-14 Rout=1.5e-14
+  ray 21 th=1.3195 jumpA=3.30e-07 jumpB=7.92e-08 minsp=4.02e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=4.8e-14 Rout=1.6e-14
+  ray 22 th=1.3823 jumpA=6.87e-07 jumpB=5.69e-07 minsp=3.90e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.0e-14 Rout=5.0e-14
+  ray 23 th=1.4451 jumpA=4.67e-07 jumpB=4.22e-07 minsp=3.79e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=6.0e-14 Rout=5.4e-14
+  ray 24 th=1.5080 jumpA=5.44e-07 jumpB=4.50e-07 minsp=3.67e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=3.1e-14 Rout=4.8e-14
+  ray 25 th=1.5708 jumpA=5.29e-07 jumpB=4.18e-07 minsp=3.55e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.5e-14 Rout=1.6e-14
+  ray 26 th=1.6336 jumpA=6.10e-07 jumpB=1.57e-07 minsp=3.43e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=9.1e-15 Rout=1.7e-14
+  ray 27 th=1.6965 jumpA=7.11e-07 jumpB=2.35e-07 minsp=3.31e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.0e-14 Rout=2.5e-14
+  ray 28 th=1.7593 jumpA=8.40e-07 jumpB=4.75e-07 minsp=3.19e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=3.6e-14 Rout=3.9e-15
+  ray 29 th=1.8221 jumpA=1.01e-06 jumpB=3.82e-07 minsp=3.07e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=5.7e-15 Rout=2.6e-14
+  ray 30 th=1.8850 jumpA=1.23e-06 jumpB=1.04e-07 minsp=2.95e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.1e-14 Rout=1.1e-14
+  ray 31 th=1.9478 jumpA=1.52e-06 jumpB=3.54e-07 minsp=2.84e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=5.6e-15 Rout=1.6e-14
+  ray 32 th=2.0106 jumpA=1.93e-06 jumpB=2.92e-07 minsp=2.73e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.0e-14 Rout=6.5e-15
+  ray 33 th=2.0735 jumpA=2.49e-06 jumpB=4.22e-07 minsp=2.61e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=4.1e-15 Rout=4.8e-15
+  ray 34 th=2.1363 jumpA=3.31e-06 jumpB=4.38e-07 minsp=2.50e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=7.5e-16 Rout=5.1e-15
+  ray 35 th=2.1991 jumpA=4.51e-06 jumpB=5.38e-07 minsp=2.40e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.9e-15 Rout=5.7e-15
+  ray 36 th=2.2619 jumpA=6.35e-06 jumpB=3.82e-07 minsp=2.29e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.8e-15 Rout=3.5e-15
+  ray 37 th=2.3248 jumpA=9.26e-06 jumpB=5.41e-07 minsp=2.19e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.4e-15 Rout=3.3e-15
+  ray 38 th=2.3876 jumpA=1.40e-05 jumpB=8.22e-07 minsp=2.09e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=9.0e-16 Rout=2.4e-15
+  ray 39 th=2.4504 jumpA=2.23e-05 jumpB=1.30e-06 minsp=2.00e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=8.0e-16 Rout=2.4e-15
+  ray 40 th=2.5133 jumpA=3.71e-05 jumpB=2.17e-06 minsp=1.96e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=2.2e-15 Rout=1.8e-15
+  ray 41 th=2.5761 jumpA=6.48e-05 jumpB=3.84e-06 minsp=1.87e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.3e-15 Rout=5.9e-16
+  ray 42 th=2.6389 jumpA=1.20e-04 jumpB=7.22e-06 minsp=1.79e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=1.2e-15 Rout=1.2e-15
+  ray 43 th=2.7018 jumpA=2.40e-04 jumpB=1.47e-05 minsp=1.71e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=5.3e-16 Rout=5.7e-16
+  ray 44 th=2.7646 jumpA=5.28e-04 jumpB=3.31e-05 minsp=1.65e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=8.7e-16 Rout=2.2e-16
+  ray 45 th=2.8274 jumpA=1.28e-03 jumpB=8.73e-05 minsp=1.63e-04 stepsA=46 rejA=3 rejB=3 |A-B| Rin=6.7e-16 Rout=1.9e-16
+  ray 46 th=2.8903 jumpA=3.14e-03 jumpB=1.61e-04 minsp=1.61e-04 stepsA=47 rejA=4 rejB=3 |A-B| Rin=3.2e-16 Rout=8.3e-16
+  ray 47 th=2.9531 jumpA=4.82e-03 jumpB=3.65e-04 minsp=1.56e-04 stepsA=50 rejA=5 rejB=5 |A-B| Rin=1.1e-16 Rout=5.0e-16
+  ray 48 th=3.0159 jumpA=5.29e-03 jumpB=2.15e-04 minsp=1.45e-04 stepsA=61 rejA=6 rejB=3 |A-B| Rin=6.9e-18 Rout=1.1e-16
+  ray 49 th=3.0788 jumpA=3.92e-03 jumpB=1.68e-04 minsp=1.56e-04 stepsA=55 rejA=6 rejB=3 |A-B| Rin=1.5e-16 Rout=1.2e-16
+  ray 50 th=3.1416 jumpA=3.84e-03 jumpB=1.56e-04 minsp=1.58e-04 stepsA=53 rejA=6 rejB=3 |A-B| Rin=5.7e-17 Rout=6.3e-17
+  [arcs d=8192] it 25 calls 25 56s active 200 minprog 0.1968 rej 503
+  [arcs d=8192] it 50 calls 50 110s active 129 minprog 0.5093 rej 507
+  [arcs d=8192] it 75 calls 75 169s active 102 minprog 0.7742 rej 509
+  [arcs d=8192] it 100 calls 100 202s active 2 minprog 0.8335 rej 509
+  [arcs d=8192] it 125 calls 125 229s active 2 minprog 0.9536 rej 509
+arcs done 233s calls 130 stuck []
+in R=1.9648317798 max_n=5.51e-14 max_2n=9.15e-14 lit_n=[] lit_2n=[] >1e-9 n=[] 2n=[] c0sec=47 m_c0 n=6.206335e-17 2n=1.678295e-16 other max n=5.51e-14 2n=9.15e-14
+out R=1.9688317798 max_n=1.62e-03 max_2n=1.62e-03 lit_n=[47] lit_2n=[47] >1e-9 n=[47] 2n=[47] c0sec=47 m_c0 n=1.621117e-03 2n=1.621117e-03 other max n=5.05e-14 2n=7.63e-14
+done 463s
+memcap: exit 0, peak 0.41 GB of 6.00 GB cap
