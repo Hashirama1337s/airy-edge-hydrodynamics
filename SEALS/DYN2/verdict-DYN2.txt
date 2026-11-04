@@ -1,0 +1,18 @@
+0.5@3: HOLDS |diff| 1.36e-11 rel 5.07e-11 3*bar 2.05e-10
+0.5@3.5: HOLDS |diff| 4.53e-13 rel 1.72e-12 3*bar 6.96e-12
+0.5@4: HOLDS |diff| 2.36e-14 rel 9.07e-14 3*bar 3.81e-13
+0.5@4.5: HOLDS |diff| 1.69e-15 rel 6.55e-15 3*bar 2.93e-14
+0.5@5: HOLDS |diff| 1.54e-16 rel 6.01e-16 3*bar 2.88e-15
+0.5@6: HOLDS |diff| 2.21e-18 rel 8.68e-18 3*bar 4.8e-17
+1.0@3: HOLDS |diff| 7.6e-5 rel 5.07e-5 3*bar 0.00105
+1.0@3.5: HOLDS |diff| 4.35e-7 rel 3.39e-7 3*bar 8.82e-6
+1.0@4: HOLDS |diff| 1.0e-8 rel 8.37e-9 3*bar 2.71e-7
+1.0@4.5: HOLDS |diff| 4.51e-10 rel 3.93e-10 3*bar 1.56e-8
+1.0@5: HOLDS |diff| 3.08e-11 rel 2.76e-11 3*bar 1.33e-9
+1.0@6: HOLDS |diff| 3.18e-13 rel 2.95e-13 3*bar 2.04e-11
+1.5@3.5: HOLDS |diff| 0.0271 rel 0.00605 3*bar 0.16
+1.5@4: HOLDS |diff| 0.000401 rel 0.000113 3*bar 0.00265
+1.5@4.5: HOLDS |diff| 1.19e-5 rel 3.83e-6 3*bar 0.000115
+1.5@5: HOLDS |diff| 6.48e-7 rel 2.24e-7 3*bar 9.09e-6
+1.5@6: HOLDS |diff| 5.9e-9 rel 2.22e-9 3*bar 1.78e-7
+ALL HOLDS H(d=4) HOLDS
