@@ -1,0 +1,36 @@
+A 0.5@3: HOLDS |diff| 1.66e-6 rel 2.5e-6 3*bar 2.75e-5
+A 0.5@3.5: HOLDS |diff| 1.63e-7 rel 2.5e-7 3*bar 3.33e-6
+A 0.5@4: HOLDS |diff| 2.02e-8 rel 3.16e-8 3*bar 4.98e-7
+A 0.5@4.5: HOLDS |diff| 3.08e-9 rel 4.9e-9 3*bar 8.91e-8
+A 0.5@5: HOLDS |diff| 5.58e-10 rel 9.0e-10 3*bar 1.86e-8
+A 0.5@6: HOLDS |diff| 2.75e-11 rel 4.52e-11 3*bar 1.17e-9
+A 1.0@3: HOLDS |diff| 0.00184 rel 0.00119 3*bar 0.0315
+A 1.0@3.5: HOLDS |diff| 0.000383 rel 0.000243 3*bar 0.00546
+A 1.0@4: HOLDS |diff| 7.04e-5 rel 4.43e-5 3*bar 0.000873
+A 1.0@4.5: HOLDS |diff| 1.29e-5 rel 8.13e-6 3*bar 0.000148
+A 1.0@5: HOLDS |diff| 2.55e-6 rel 1.62e-6 3*bar 3.33e-5
+A 1.0@6: HOLDS |diff| 1.4e-7 rel 9.01e-8 3*bar 2.37e-6
+A 1.5@4.5: HOLDS |diff| 0.015 rel 0.00497 3*bar 0.0894
+A 1.5@5: HOLDS |diff| 0.00273 rel 0.000884 3*bar 0.0168
+A 1.5@6: HOLDS |diff| 9.09e-5 rel 2.96e-5 3*bar 0.000792
+A 3@6: HOLDS |diff| 0.0594 rel 0.00412 3*bar 0.354
+A ALL HOLDS H(d=4) HOLDS
+descriptive d=4 large momentum: {'3': {'re': '6.181987251613330211120142', 'im': '-0.7049446523131661773796944'}, '5': {'re': '10.22330718329242174201763', 'im': '-0.5367401203020710449752389'}}
+memcap: exit 0, peak 0.02 GB of 2.00 GB cap
+0.5 3 err/bar 0.181 rel 2.5e-6
+0.5 3.5 err/bar 0.146 rel 2.5e-7
+0.5 4 err/bar 0.122 rel 3.16e-8
+0.5 4.5 err/bar 0.104 rel 4.9e-9
+0.5 5 err/bar 0.09 rel 9.0e-10
+0.5 6 err/bar 0.0707 rel 4.52e-11
+1.0 3 err/bar 0.175 rel 0.00119
+1.0 3.5 err/bar 0.21 rel 0.000243
+1.0 4 err/bar 0.242 rel 4.43e-5
+1.0 4.5 err/bar 0.26 rel 8.13e-6
+1.0 5 err/bar 0.23 rel 1.62e-6
+1.0 6 err/bar 0.177 rel 9.01e-8
+1.5 4.5 err/bar 0.503 rel 0.00497
+1.5 5 err/bar 0.486 rel 0.000884
+1.5 6 err/bar 0.344 rel 2.96e-5
+3 6 err/bar 0.504 rel 0.00412
+within 1x bar: 16 of 16

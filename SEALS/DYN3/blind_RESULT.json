@@ -1,0 +1,148 @@
+{
+ "pole": {
+  "0.5": {
+   "3": {
+    "re": "0.6557192901923586153932755",
+    "im": "-0.1131315514597278221482401"
+   },
+   "3.5": {
+    "re": "0.6345149587524802115829244",
+    "im": "-0.1425363996064302344758108"
+   },
+   "4": {
+    "re": "0.6171109876160607927824209",
+    "im": "-0.1623465956595927582893231"
+   },
+   "4.5": {
+    "re": "0.6030659612167260534983107",
+    "im": "-0.1762497469146190849238837"
+   },
+   "5": {
+    "re": "0.5917047563381561117934154",
+    "im": "-0.1864163077048244085178319"
+   },
+   "6": {
+    "re": "0.5747406558877578131826556",
+    "im": "-0.2001534356676332593529017"
+   }
+  },
+  "1.0": {
+   "3": {
+    "re": "1.506912470745559931910468",
+    "im": "-0.3146278593470880457344863"
+   },
+   "3.5": {
+    "re": "1.509029777793171294755332",
+    "im": "-0.4559817825730087595322060"
+   },
+   "4": {
+    "re": "1.482859930917321822978577",
+    "im": "-0.5725600144929307091324098"
+   },
+   "4.5": {
+    "re": "1.442502782512497306340149",
+    "im": "-0.6596950774874628030573700"
+   },
+   "5": {
+    "re": "1.399876910963287960801636",
+    "im": "-0.7218670982183267006057261"
+   },
+   "6": {
+    "re": "1.326452482080650299116620",
+    "im": "-0.7985965240597486313939053"
+   }
+  },
+  "1.5": {
+   "4.5": {
+    "re": "2.777060742382736299652829",
+    "im": "-1.178064020266308268545615"
+   },
+   "5": {
+    "re": "2.727914585381067501106008",
+    "im": "-1.443368281282187046783399"
+   },
+   "6": {
+    "re": "2.507256626727891823785135",
+    "im": "-1.766931973397985697995887"
+   }
+  },
+  "3": {
+   "6": {
+    "re": "11.84880808228719903122391",
+    "im": "-8.218724660647282360740273"
+   },
+   "4": {
+    "re": "6.181987251613330211120142",
+    "im": "-0.7049446523131661773796944"
+   }
+  },
+  "5": {
+   "4": {
+    "re": "10.22330718329242174201763",
+    "im": "-0.5367401203020710449752389"
+   }
+  }
+ },
+ "digits": {
+  "0.5": {
+   "3": "25",
+   "3.5": "25",
+   "4": "25",
+   "4.5": "25",
+   "5": "25",
+   "6": "25"
+  },
+  "1.0": {
+   "3": "25",
+   "3.5": "25",
+   "4": "25",
+   "4.5": "25",
+   "5": "25",
+   "6": "25"
+  },
+  "1.5": {
+   "4.5": "25",
+   "5": "25",
+   "6": "25"
+  },
+  "3": {
+   "6": "25",
+   "4": "25"
+  },
+  "5": {
+   "4": "25"
+  }
+ },
+ "control_d4": "d=4, frak q=1 (qbar=1): Omega = 1.482859930917321822978577 - 0.5725600144929307091324098 i => frak w = Omega/2 = 0.741429965458660911489288 - 0.286280007246465354566205 i (both master equations, 39 digits agree). Matches KS 0.741420 - 0.286280i in Im to 6 digits but Re differs by 1.0e-5 (0.741430 vs 0.741420): we believe KS line 2100 has a one-digit typo. Supporting: (i) our Z_S at d=4 is symbolically identical to KS eq. (Zequation), and an independent Kodama-Ishibashi master equation gives the same root to 39 digits; (ii) Morgan et al. 0907.5011 Table tab3a lists d_M=5, frak q(Morgan)=2 (= our qbar=1) as 1.48286 - 0.57256i, i.e. frak w = 0.74143, agreeing with us, not 0.741420.",
+ "branch_check": "Each d tracked in qbar from qbar=0.02 (start guess = first-order hydro Omega = q/sqrt(d-1) - i (d-2)/(d(d-1)) q^2) by natural-parameter continuation (adaptive step <=0.25, linear predictor, step halved if corrector moved >25% of the last increment); d=6 re-tracked with max step 0.01: same values. Small-qbar check: Re Omega/(v_s q) - 1 and -Im Omega/(Gamma q^2) - 1 scale exactly as qbar^2 (ratio 4.00 between qbar=0.02 and 0.01) for d=3,3.5,4,4.5,5 and between 0.01 and 0.005 for d=6, with v_s^2=1/(d-1), Gamma=(d-2)/(d(d-1)). WARNING (surprise): at d=6 the continuously followed sound pole becomes strongly damped: qbar=3 -> 11.8488 - 8.2187i. The weakly damped pole at d=6, qbar=3 is 8.135385546144508119200060026 - 1.221057085620792328184502183i; followed back in qbar at d=6 it goes to the first NON-hydro pole (5.1017 - 2.5888i at qbar=0.5), but followed in d at fixed qbar=3 from d=5 it is the continuation of the d=5 sound pole. qbar-tracking gives the weakly damped branch at qbar=3 for d=5.25 and 5.5 and the strongly damped one for d=5.75 and 6, so the sound pole and the first non-hydro pole exchange identity (pole collision / exceptional point) at some real (d*, qbar*) with 5.5<d*<5.75, roughly 1.5<qbar*<3. Reported d=6 values follow the brief: continuous in qbar from small qbar.",
+ "agreement_detail": {
+  "qbar=0.5,d=3": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.1 digits; KI vs KS-type Z_S: 40.1 digits",
+  "qbar=0.5,d=3.5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.1 digits; KI vs KS-type Z_S: 40.1 digits",
+  "qbar=0.5,d=4": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.6 digits; KI vs KS-type Z_S: 40.6 digits",
+  "qbar=0.5,d=4.5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.0 digits; KI vs KS-type Z_S: 40.0 digits",
+  "qbar=0.5,d=5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.2 digits; KI vs KS-type Z_S: 40.2 digits",
+  "qbar=0.5,d=6": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.4 digits; KI vs KS-type Z_S: 40.4 digits",
+  "qbar=1.0,d=3": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.9 digits; KI vs KS-type Z_S: 39.9 digits",
+  "qbar=1.0,d=3.5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.7 digits; KI vs KS-type Z_S: 39.7 digits",
+  "qbar=1.0,d=4": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.6 digits; KI vs KS-type Z_S: 39.6 digits",
+  "qbar=1.0,d=4.5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.7 digits; KI vs KS-type Z_S: 39.7 digits",
+  "qbar=1.0,d=5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.6 digits; KI vs KS-type Z_S: 39.6 digits",
+  "qbar=1.0,d=6": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.0 digits; KI vs KS-type Z_S: 40.0 digits",
+  "qbar=1.5,d=4.5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.1 digits; KI vs KS-type Z_S: 40.1 digits",
+  "qbar=1.5,d=5": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.7 digits; KI vs KS-type Z_S: 39.7 digits",
+  "qbar=1.5,d=6": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 40.1 digits; KI vs KS-type Z_S: 40.1 digits",
+  "qbar=3,d=6": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 39.7 digits; KI vs KS-type Z_S: 39.7 digits",
+  "qbar=3,d=4": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 26.5 digits; KI vs KS-type Z_S: 36.6 digits",
+  "qbar=5,d=4": "P1(dps40,u0=0.4r_b) vs P2(dps60,u0=0.25r_b,other steps): 26.8 digits; KI vs KS-type Z_S: 36.9 digits"
+ },
+ "extra": {
+  "d6_qbar3_weakly_damped_pole": {
+   "re": "8.135385546144508119200060026",
+   "im": "-1.221057085620792328184502183"
+  },
+  "d6_qbar3_strongly_damped_followed_branch": {
+   "re": "11.84880808228719903122391",
+   "im": "-8.218724660647282360740273"
+  }
+ }
+}
