@@ -1,0 +1,35 @@
+{
+  "PC": {
+    "absq2_star_ours": "2.22399",
+    "absq2_star_GKST": "2.224",
+    "locator": "GKST arXiv:1904.12862v3, sec. 4.2, eq. (4.20), printed p. 24: q_c^2 ~ 1.8906469 +/- 1.1711505 i, |q_c^shear| ~ 1.49131 (so |q_c^2| = 2.223991 from the printed components); also sec. 4.2 text p. 25: '|q^2_c| ~ 2.224'"
+  },
+  "4": {
+    "R": "2.22399",
+    "theta": "0.554594",
+    "beta": "0.500",
+    "n_range": "40-120 (rho=2.0, M=256, pair ansatz with 3 1/n corrections)",
+    "stability": "windows 30-100/nc2, 50-125/nc4, 30-125/nc5, 60-125/nc4, rho=1.8 30-100, rtol=1e-11 run: R in [2.223981, 2.224007] (spread 2.6e-5), theta in [0.5545941, 0.5545993] (5e-6), beta in [0.4986, 0.5020] (3.5e-3)",
+    "R_direct_critical_point": "2.2239917047",
+    "theta_direct_critical_point": "0.5545942652"
+  },
+  "512": {
+    "R": "2.00",
+    "theta": "2.78",
+    "beta": "NOT DETERMINED (single conjugate-pair Darboux fits give beta from -1.8 to +4.0 depending on window; no stable value)",
+    "n_range": "20-90 (rho=1.75 and rho=1.85, M=256; pair ansatz, 1 correction): R=1.9996, theta=2.7790, beta=-0.29",
+    "stability": "fits over windows 20-110/nc2, 30-110/nc2, 30-110/nc3, 40-110/nc3, 25-100/nc2 and three 1/n-extrapolated recurrence windows: R in [1.939, 2.028], theta in [2.756, 2.791], beta in [-1.8, +4.0]; coefficients from the two radii agree to 1e-9 (n<=50) and 1e-6 (n~110), so the spread is model (singularity-structure) error, not noise",
+    "R2": "2.07654 (candidate, unverified on principal sheet)",
+    "theta2": "2.88149 (candidate, unverified on principal sheet)",
+    "note": "Directly solved QNM level crossings (W=dW/dw=0) at q2=-2.0066977+0.5340388i (|.|=2.07654, arg 2.88149) and q2=-2.0270884+0.7917469i (|.|=2.17622, arg 2.76923); neither coincides with the coefficient-asymptotics singularity near |q2|~2.00, arg~2.78; half-circle continuation at rho=1.96 shows no monodromy"
+  },
+  "1024": {
+    "R": "2.0",
+    "theta": "2.85",
+    "beta": "NOT DETERMINED (single conjugate-pair Darboux fits give beta from -5.2 to -0.4 depending on window; no stable value)",
+    "n_range": "20-90 (rho=1.75, M=256; pair ansatz, 1 correction): R=1.9830, theta=2.8535, beta=-0.36",
+    "stability": "windows 20-110/nc2, 30-110/nc2, 30-110/nc3, 40-110/nc3, 25-100/nc2 and three 1/n-extrapolated recurrence windows (rho=1.75), plus rho=1.6 windows to n=80: R in [1.934, 2.077], theta in [2.823, 2.879], beta in [-5.2, 0.0]; coefficients from rho=1.6 and rho=1.75 agree to 5e-9 at n=50 and 7e-7 at n=70 (rho=1.6 noise-limited above n~80), so the spread is model (singularity-structure) error",
+    "R2": "not identified",
+    "theta2": "not identified"
+  }
+}
