@@ -1,0 +1,3 @@
+P1 d=1024: P0 PASS (lit [45], c0 sector 45, c0 mism 7.278e-03/7.278e-03); in max 6.36e-14/7.39e-14; max ray jump 5.756e-04 -> HOLDS
+P2 d=512: P0 PASS (lit [42], c0 sector 42, c0 mism 1.065e-02/1.065e-02); in max 6.60e-14/6.00e-14; max ray jump 3.013e-04 -> HOLDS
+P3 d=8192: P0 PASS (lit [47], c0 sector 47, c0 mism 1.621e-03/1.621e-03); in max 5.51e-14/9.15e-14; max ray jump 5.294e-03 -> HOLDS
