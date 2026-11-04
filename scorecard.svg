@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="500" viewBox="0 0 860 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="860" height="500" rx="10" fill="#ffffff" stroke="#d9dbe8"/>
+<text x="20" y="34" font-size="18" font-weight="600" fill="#18192b">Paper II scorecard: every sealed test</text>
+<text x="20" y="54" font-size="12" fill="#555b74">Sealed = prediction and pass bar hashed before the data. Failures are shown as failures.</text>
+<rect x="10" y="66" width="840" height="22" fill="#eef0fa"/>
+<text x="20" y="82" font-size="11.5" font-weight="600" fill="#3a3fa8" letter-spacing="0.5">THE AIRY LAW AND ITS FORWARD TESTS</text>
+<text x="20" y="110" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">DYN1</text>
+<text x="100" y="110" font-size="12.5" fill="#18192b">Critical point heads to (-2, i); census; exponent</text>
+<rect x="470" y="96" width="110.3" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="110" font-size="11.5" font-weight="600" fill="#1f7a4d">C1 P3 P4 HOLD</text>
+<rect x="586.3" y="96" width="103.19999999999999" height="20" rx="10" fill="#fbe3e1"/>
+<text x="595.3" y="110" font-size="11.5" font-weight="600" fill="#b3322a">P1 P2 FAILED</text>
+<line x1="10" y1="119" x2="850" y2="119" stroke="#eceef5"/>
+<text x="20" y="140" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">DYN1b</text>
+<text x="100" y="140" font-size="12.5" fill="#18192b">Forward points at d = 8192-32768; census at 1024</text>
+<rect x="470" y="126" width="110.3" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="140" font-size="11.5" font-weight="600" fill="#1f7a4d">P1-P4 P6 HOLD</text>
+<rect x="586.3" y="126" width="81.9" height="20" rx="10" fill="#fbe3e1"/>
+<text x="595.3" y="140" font-size="11.5" font-weight="600" fill="#b3322a">P5 FAILED</text>
+<line x1="10" y1="149" x2="850" y2="149" stroke="#eceef5"/>
+<text x="20" y="170" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">THEORY</text>
+<text x="100" y="170" font-size="12.5" fill="#18192b">No-fit model, blind, at d = 8192-32768</text>
+<rect x="470" y="156" width="138.7" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="170" font-size="11.5" font-weight="600" fill="#1f7a4d">T1-T3 T4&#x27; T5 HOLD</text>
+<rect x="614.7" y="156" width="81.9" height="20" rx="10" fill="#fbe3e1"/>
+<text x="623.7" y="170" font-size="11.5" font-weight="600" fill="#b3322a">T4 FAILED</text>
+<line x1="10" y1="179" x2="850" y2="179" stroke="#eceef5"/>
+<rect x="10" y="186" width="840" height="22" fill="#eef0fa"/>
+<text x="20" y="202" font-size="11.5" font-weight="600" fill="#3a3fa8" letter-spacing="0.5">THE RADIUS OF CONVERGENCE</text>
+<text x="20" y="230" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">RC</text>
+<text x="100" y="230" font-size="12.5" fill="#18192b">Nothing nearer than c0 at d = 512, 1024, 8192</text>
+<rect x="470" y="216" width="74.8" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="230" font-size="11.5" font-weight="600" fill="#1f7a4d">ALL HOLD</text>
+<line x1="10" y1="239" x2="850" y2="239" stroke="#eceef5"/>
+<text x="20" y="260" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">RC2</text>
+<text x="100" y="260" font-size="12.5" fill="#18192b">Radius from coefficients, free exponent</text>
+<rect x="470" y="246" width="60.599999999999994" height="20" rx="10" fill="#fbe3e1"/>
+<text x="479" y="260" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="269" x2="850" y2="269" stroke="#eceef5"/>
+<text x="20" y="290" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">RC3</text>
+<text x="100" y="290" font-size="12.5" fill="#18192b">Radius from coefficients at d = 2048, 8192</text>
+<rect x="470" y="276" width="67.69999999999999" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="290" font-size="11.5" font-weight="600" fill="#1f7a4d">P1 HOLD</text>
+<rect x="543.7" y="276" width="174.2" height="20" rx="10" fill="#fbe3e1"/>
+<text x="552.7" y="290" font-size="11.5" font-weight="600" fill="#b3322a">P2 nearest-pair FAILED</text>
+<line x1="10" y1="299" x2="850" y2="299" stroke="#eceef5"/>
+<text x="20" y="320" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">RC3R</text>
+<text x="100" y="320" font-size="12.5" fill="#18192b">Third-circle repair check at d = 8192</text>
+<rect x="470" y="306" width="46.4" height="20" rx="10" fill="#fbf0d4"/>
+<text x="479" y="320" font-size="11.5" font-weight="600" fill="#8a6100">VOID</text>
+<line x1="10" y1="329" x2="850" y2="329" stroke="#eceef5"/>
+<rect x="10" y="336" width="840" height="22" fill="#eef0fa"/>
+<text x="20" y="352" font-size="11.5" font-weight="600" fill="#3a3fa8" letter-spacing="0.5">BELOW THE EDGE (APPENDIX)</text>
+<text x="20" y="380" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">DYN2</text>
+<text x="100" y="380" font-size="12.5" fill="#18192b">Shear diffusion poles, 17 cells, d = 3-6</text>
+<rect x="470" y="366" width="89.0" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="380" font-size="11.5" font-weight="600" fill="#1f7a4d">17/17 HOLD</text>
+<line x1="10" y1="389" x2="850" y2="389" stroke="#eceef5"/>
+<text x="20" y="410" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">DYN3</text>
+<text x="100" y="410" font-size="12.5" fill="#18192b">Sound poles, 16 cells, d = 3-6</text>
+<rect x="470" y="396" width="89.0" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="410" font-size="11.5" font-weight="600" fill="#1f7a4d">16/16 HOLD</text>
+<line x1="10" y1="419" x2="850" y2="419" stroke="#eceef5"/>
+<text x="20" y="440" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">SHEAR</text>
+<text x="100" y="440" font-size="12.5" fill="#18192b">Two exact shear coefficients</text>
+<rect x="470" y="426" width="89.0" height="20" rx="10" fill="#dff3e8"/>
+<text x="479" y="440" font-size="11.5" font-weight="600" fill="#1f7a4d">P1 P2 HOLD</text>
+<rect x="565.0" y="426" width="110.3" height="20" rx="10" fill="#fbf0d4"/>
+<text x="574.0" y="440" font-size="11.5" font-weight="600" fill="#8a6100">C1 scorer bug</text>
+<line x1="10" y1="449" x2="850" y2="449" stroke="#eceef5"/>
+<text x="20" y="486" font-size="11" fill="#555b74">Full numbers and disclosures: README tables, paper.md and SEALS/HASHES.md. Moki &amp; Julio (AI-assisted).</text>
+</svg>

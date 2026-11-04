@@ -2,6 +2,18 @@
 
 Moki & Julio (AI-assisted)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23942230.svg)](https://doi.org/10.5281/zenodo.23942230)
+![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
+
+**At a glance.** Fluid (hydrodynamic) predictions for the AdS black brane work only up to a certain momentum. The point
+that sets that limit approaches (qfr^2, wfr) = (-2, i) as d^(-1/3) when the dimension d grows, with a coefficient from
+the Airy function (formal matched asymptotics, no error bounds). A no-fit model predicted it blind at d = 8192-32768 to
+8e-6 down to 8e-7, and a numerical census at d = 512, 1024 and 8192 found no nearer obstacle. Failures are shown.
+
+**Read** [paper.md](paper.md) · **Re-run** [REPRODUCE.md](REPRODUCE.md) · **Check** [SEALS/HASHES.md](SEALS/HASHES.md) · **Companion** [Paper I](https://github.com/Hashirama1337s/large-d-gregory-laflamme)
+
+![Scorecard of every sealed test](scorecard.svg)
+
 This repository holds the preprint (paper.md), the data, the code that regenerates the headline numbers, and the sealed-test
 records for Paper II. Archived at Zenodo: [doi:10.5281/zenodo.23942230](https://doi.org/10.5281/zenodo.23942230) (all versions;
 v1.0 = 10.5281/zenodo.23942231). Companion paper (Paper I): doi:10.5281/zenodo.23940227.
