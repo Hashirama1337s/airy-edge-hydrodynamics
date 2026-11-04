@@ -1,0 +1,22 @@
+{
+  "SPC": {
+    "max_rel_R_err": "6.471e-06",
+    "max_theta_err": "8.221e-06"
+  },
+  "2048": {
+    "R": "1.9630256953",
+    "theta": "2.9211396480",
+    "R_free": "1.99443244",
+    "beta_free": "-1.79739",
+    "n_range": "30-200 (rho=1.92, M=1024; beta fixed 1/2, ladder of K=1..4 conjugate sqrt pairs each with a (1-x)^{3/2} correction; K=4 selected by residual: rms 5.5e-4, 8.3e-6, 5.6e-8, 7.3e-10)",
+    "stability": "pair with largest contribution at n2, over 5 windows (30-200, 40-220, 30-180, 50-200, 30-240) x 2 radii (1.85, 1.92): R in [1.9629588, 1.9630443] (spread 8.5e-5; 9 of 10 within [1.9630230, 1.9630443]), theta in [2.9210883, 2.9211510] (spread 6.3e-5); free single-pair fits: R_free in [1.97592, 2.00176], beta_free in [-2.32, -0.99] (unstable; description only); radii agree to 1.6e-7 at n=200"
+  },
+  "8192": {
+    "R": "1.9667280547",
+    "theta": "3.0043821896",
+    "R_free": "1.97944173",
+    "beta_free": "-0.99747",
+    "n_range": "30-200 (rho=1.92, M=1024; same ladder model; K=4 selected: rms 2.5e-4, 4.3e-7, 1.5e-8, 2.0e-11)",
+    "stability": "largest-contribution pair over the same 10 fits: R in [1.9643813, 1.9671073] (spread 2.7e-3; 8 of 10 within [1.9667224, 1.9671073]), theta in [2.9979447, 3.0045951] (spread 6.6e-3; 8 of 10 within [3.0042881, 3.0045951]); a weaker closer pair near R=1.949-1.952, theta=2.959-2.977 (contribution 0.07-0.43) appears in 4 of 10 fits, so it is unresolved; free fits: R_free in [1.97818, 1.99903], beta_free in [-2.63, -0.99]; radii agree to 5e-8 at n=200"
+  }
+}
