@@ -1,0 +1,216 @@
+{
+ "controls": {
+  "c22": {
+   "setA": "3.2898681336964528729448303332920503784378998024156",
+   "exact": "3.2898681336964528729448303332920503784378998024136",
+   "rel_err_A": "6.08e-49",
+   "rel_err_B": "5.57e-66"
+  },
+  "c33": {
+   "setA": "-4.8082276126383771415989526460457999630599451693660",
+   "exact": "-4.8082276126383771415989526460457999630599451693620",
+   "rel_err_A": "8.32e-49",
+   "rel_err_B": "5.4e-65"
+  },
+  "c44": {
+   "setA": "8.6585858696891055321280295723293432221980076153578",
+   "exact": "8.6585858696891055321280295723293432221980076153498",
+   "rel_err_A": "9.24e-49",
+   "rel_err_B": "4.12e-64"
+  },
+  "c55": {
+   "setA": "-16.590844082293918821301847783312546688913294712047",
+   "exact": "-16.590844082293918821301847783312546688913294712031",
+   "rel_err_A": "9.64e-49",
+   "rel_err_B": "3.08e-62"
+  },
+  "c32": {
+   "setA": "-4.8082276126383771415989526460457999630599452185087",
+   "exact": "-4.8082276126383771415989526460457999630599451693620",
+   "rel_err_A": "1.02e-44",
+   "rel_err_B": "3.28e-61"
+  },
+  "c42": {
+   "setA": "8.6585858696891055321280295723293432221983566525511",
+   "exact": "8.6585858696891055321280295723293432221980076153498",
+   "rel_err_A": "4.03e-41",
+   "rel_err_B": "1.96e-57"
+  },
+  "c52": {
+   "setA": "-16.590844082293918821301847783312546690095808505591",
+   "exact": "-16.590844082293918821301847783312546688913294712031",
+   "rel_err_A": "7.13e-38",
+   "rel_err_B": "5.14e-54"
+  },
+  "c43": {
+   "setA": "60.610101087823738724896207006305402555386053411448",
+   "exact": "60.610101087823738724896207006305402555386053307449",
+   "rel_err_A": "1.72e-45",
+   "rel_err_B": "4.22e-62"
+  },
+  "sigma^0,sigma^1 coefficients (must vanish), max abs, set A": "5.01e-37",
+  "d=4 vs arXiv:1904.12862 (shear dispersion, units w=2*w_hat, q^2=4*sigma)": {
+   "a1": {
+    "num": "0.9999999999999999999999999985799717933515",
+    "imag": 1.3043091785249915e-48
+   },
+   "a2": {
+    "num": "0.6137056388801093811655357584652289643045",
+    "imag": 4.019838123978662e-48,
+    "ref_1904.12862": "0.613705638880109381165535757083646863849",
+    "absdiff": "1.38e-27"
+   },
+   "a3": {
+    "num": "0.5537559776491585243919898855651246509006",
+    "imag": 1.0947644252537633e-47,
+    "ref_1904.12862": "0.5537559776491585243919898773212693954065",
+    "absdiff": "8.24e-27"
+   },
+   "a4": {
+    "num": "0.4742024333470819337222297584341001937702",
+    "imag": 5.692775011319569e-46,
+    "ref_1904.12862": "0.4742024333470819337222297383880612227861",
+    "absdiff": "2.0e-26"
+   },
+   "a5": {
+    "num": "0.2794404502374203691971597577818694891495",
+    "imag": 4.028733084933849e-45
+   }
+  }
+ },
+ "digits": {
+  "c53": {
+   "agree_A_B": 41,
+   "reported": 39,
+   "setA": "-262.36386819704050163792890752727457857358916",
+   "ratio_to_(-1)^m 2^(m-1) zeta(m)": "15.8137745672048402809408623075680365572",
+   "claimed_setB": 50,
+   "note": "strict two-node-set agreement = agree_A_B (limited by set A alias floor); claimed_setB rests on set B's own alias bound (same-diagonal controls good to >=54 digits in set B)"
+  },
+  "c54": {
+   "agree_A_B": 45,
+   "reported": 43,
+   "setA": "-257.760830102262360545584434120602567310071974840",
+   "ratio_to_(-1)^m 2^(m-1) zeta(m)": "15.53633008807248585405286771942454008007439",
+   "claimed_setB": 50,
+   "note": "strict two-node-set agreement = agree_A_B (limited by set A alias floor); claimed_setB rests on set B's own alias bound (same-diagonal controls good to >=54 digits in set B)"
+  },
+  "c63": {
+   "agree_A_B": 38,
+   "reported": 36,
+   "setA": "1055.4424230384498420820397088744167741513",
+   "ratio_to_(-1)^m 2^(m-1) zeta(m)": "32.4203083034891933532481844270654901",
+   "claimed_setB": 48,
+   "note": "strict two-node-set agreement = agree_A_B (limited by set A alias floor); claimed_setB rests on set B's own alias bound (same-diagonal controls good to >=54 digits in set B)"
+  },
+  "c65": {
+   "agree_A_B": 45,
+   "reported": 43,
+   "setA": "894.364483422063236793991961531001614610406243999",
+   "ratio_to_(-1)^m 2^(m-1) zeta(m)": "27.47243398153404434615509731901553250361975",
+   "claimed_setB": 50,
+   "note": "strict two-node-set agreement = agree_A_B (limited by set A alias floor); claimed_setB rests on set B's own alias bound (same-diagonal controls good to >=54 digits in set B)"
+  },
+  "c64": {
+   "agree_A_B": 42,
+   "reported": 40,
+   "setA": "2854.62858470956634218683779769851492770639016",
+   "ratio_to_(-1)^m 2^(m-1) zeta(m)": "87.68639272790120726806331124442546660160",
+   "claimed_setB": 48,
+   "note": "strict two-node-set agreement = agree_A_B (limited by set A alias floor); claimed_setB rests on set B's own alias bound (same-diagonal controls good to >=54 digits in set B)"
+  }
+ },
+ "identifications": {
+  "c53": {
+   "basis": "['zeta5', 'zeta2zeta3']",
+   "trusted_digits": "39",
+   "find_digits": "27",
+   "find": "[1, 192, 32]",
+   "holdout_residual": "4.12e-37",
+   "null": "None",
+   "verdict": "PASS",
+   "closed_form": "(-192/1)*zeta5 + (-32/1)*zeta2zeta3"
+  },
+  "c54": {
+   "basis": "['zeta5', 'zeta2zeta3', 'zeta4']",
+   "trusted_digits": "43",
+   "find_digits": "30",
+   "find": "[1, 132, 48, 24]",
+   "holdout_residual": "2.54e-41",
+   "null": "None",
+   "verdict": "PASS",
+   "closed_form": "(-132/1)*zeta5 + (-48/1)*zeta2zeta3 + (-24/1)*zeta4"
+  },
+  "c63": {
+   "basis": "['zeta6', 'zeta3^2']",
+   "trusted_digits": "36",
+   "find_digits": "25",
+   "find": "[1, -992, -32]",
+   "holdout_residual": "4.15e-33",
+   "null": "None",
+   "verdict": "PASS",
+   "closed_form": "(992/1)*zeta6 + (32/1)*zeta3^2"
+  },
+  "c65": {
+   "basis": "['zeta6', 'zeta3^2', 'zeta5', 'zeta4']",
+   "trusted_digits": "43",
+   "find_digits": "30",
+   "find": "[-3, 1952, 168, 288, 144]",
+   "holdout_residual": "4.35e-41",
+   "null": "None",
+   "verdict": "PASS",
+   "closed_form": "(-1952/-3)*zeta6 + (-168/-3)*zeta3^2 + (-288/-3)*zeta5 + (-144/-3)*zeta4"
+  },
+  "c64": {
+   "basis": "['zeta6', 'zeta3^2', 'zeta5', 'zeta2zeta3', 'zeta4']",
+   "trusted_digits": "40",
+   "find_digits": "28",
+   "find": "[-3, 6653, 696, 912, 0, -144]",
+   "holdout_residual": "3.88e-37",
+   "null": "[38, -104020, 68097, -89661, -10441, 11613]",
+   "verdict": "PASS",
+   "closed_form": "(-6653/-3)*zeta6 + (-696/-3)*zeta3^2 + (-912/-3)*zeta5 + (144/-3)*zeta4"
+  }
+ },
+ "c53": "-262.36386819704050163792890752727457857358838347749",
+ "c54": "-257.76083010226236054558443412060256731007197461999",
+ "c63": "1055.44242303844984208203970887441677414848248310",
+ "c65": "894.36448342206323679399196153100161461040624353510",
+ "c64": "2854.62858470956634218683779769851492770638842170",
+ "c53_over_16zeta5": "-15.813774567204840280940862307568036557210314901735",
+ "c54_over_16zeta5": "-15.536330088072485854052867719424540080074389035168",
+ "closed_form_check": {
+  "c53": {
+   "value": "-262.363868197040501637928907527274578573588383477491554577311",
+   "rel_err_setA": "2.97e-42",
+   "rel_err_setB": "1.41e-58"
+  },
+  "c54": {
+   "value": "-257.760830102262360545584434120602567310071974619988378982384",
+   "rel_err_setA": "8.53e-46",
+   "rel_err_setB": "4.58e-62"
+  },
+  "c63": {
+   "value": "1055.44242303844984208203970887441677414848248309703517091988",
+   "rel_err_setA": "2.64e-39",
+   "rel_err_setB": "1.86e-55"
+  },
+  "c65": {
+   "value": "894.364483422063236793991961531001614610406243535103671508460",
+   "rel_err_setA": "5.19e-46",
+   "rel_err_setB": "5.22e-62"
+  }
+ },
+ "setup": {
+  "setA": "M=48, r=0.05, 260 bits, kappa=1/8, Lmax=240",
+  "setB": "M=56, r=0.035, 232 bits, kappa=1/7, Lmax=210",
+  "max_newton_residual_setB": 4.49711916032081e-71
+ },
+ "closed_forms_PASS": {
+  "c53": "-192 zeta5 - 32 zeta2 zeta3",
+  "c54": "-132 zeta5 - 48 zeta2 zeta3 - 24 zeta4",
+  "c63": "992 zeta6 + 32 zeta3^2",
+  "c65": "(1952/3) zeta6 + 56 zeta3^2 + 96 zeta5 + 48 zeta4",
+  "c64": "(6653/3) zeta6 + 232 zeta3^2 + 304 zeta5 - 48 zeta4"
+ }
+}

@@ -1,0 +1,466 @@
+{
+ "object": "coefficients c_{m,j} of omega = -i qbar^2 - i sum_m d^-m sum_j c_{m,j} qbar^(2j), shear channel AdS_{d+1} Schwarzschild brane, conventions of arXiv:2308.01371 eq. (hydro_series) (PSD_v2.tex l.175-178), qbar = q/sqrt(d), T = d/(4 pi), r_h = 1",
+ "method": "exact perturbation theory in qbar^2 at fixed complex e=1/d on the apparent-singularity-free momentum variable Pi (derived from eq. (EoM), verified symbolically), two-point generalized series (u=0: sum_j u^{j e} x series; u=1: series in 1-u) matched at u=1/2, ~140-digit ball arithmetic; e-Taylor coefficients by trapezoidal Cauchy integrals on |e|=1/32 (K=256) and |e|=1/48 (K=384)",
+ "controls": {
+  "c_2_2": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_3_2": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_3_3": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_4_2": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_4_4": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_5_2": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_5_5": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_6_2": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_6_6": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_7_2": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_7_7": {
+   "published": "(-1)^m 2^(m-1) zeta(m)",
+   "digits_matched": ">120"
+  },
+  "c_4_3": {
+   "published": "56 zeta4",
+   "digits_matched": ">120"
+  },
+  "C2(d=100)_vs_H_{2/d}/d": {
+   "digits_matched": 127
+  },
+  "d=4_N=4SYM_q^4,q^6,q^8_vs_arXiv:1904.12862_eq4.14": {
+   "rel_diff": [
+    "3.9e-130",
+    "3.9e-129",
+    "1.3e-128"
+   ],
+   "digits_matched": 128
+  },
+  "cross_radius_rho1/32_vs_rho1/48": {
+   "digits_matched": ">=122 on every coefficient"
+  },
+  "identify_tool_positive_control": {
+   "c_4_3": "(56/1)*zeta4",
+   "verdict": "PASS"
+  }
+ },
+ "c53": {
+  "value": "-262.36386819704050163792890752727457857358838347749155457731130702328117033165737968200457637966558802079412271",
+  "trusted_digits": 110
+ },
+ "c54": {
+  "value": "-257.76083010226236054558443412060256731007197461998837898238433195258729027931341024900597120918637956956219033",
+  "trusted_digits": 110
+ },
+ "c63": {
+  "value": "1055.4424230384498420820397088744167741484824830970351709198752878730522088349455659626299652676194485471547791",
+  "trusted_digits": 110
+ },
+ "c64": {
+  "value": "2854.6285847095663421868377976985149277063884217032296913157127218421839606227711831990433324661544902579743837",
+  "trusted_digits": 110
+ },
+ "c65": {
+  "value": "894.36448342206323679399196153100161461040624353510367150845957253188910381468729575166088258373025952828495988",
+  "trusted_digits": 110
+ },
+ "c53_over_16z5": "-15.81377456720484028094086230756803655721",
+ "c54_over_16z5": "-15.53633008807248585405286771942454008007",
+ "c63_over_32z6": "32.4203083034891933532481844271",
+ "c65_over_32z6": "27.472433981534044346155097319",
+ "identifications": {
+  "c_5_3": {
+   "closed_form": "(-192/1)*zeta5 + (-32/1)*zeta2zeta3",
+   "verdict": "PASS",
+   "basis": [
+    "zeta5",
+    "zeta2zeta3"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "1.09e-114",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_5_4": {
+   "closed_form": "(132/-1)*zeta5 + (48/-1)*zeta2zeta3 + (24/-1)*zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "6.44e-114",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_6_3": {
+   "closed_form": "(992/1)*zeta6 + (32/1)*zeta3^2",
+   "verdict": "PASS",
+   "basis": [
+    "zeta6",
+    "zeta3^2"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "9.58e-114",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_6_4": {
+   "closed_form": "(-6653/-3)*zeta6 + (-696/-3)*zeta3^2 + (-912/-3)*zeta5 + (144/-3)*zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "9.62e-114",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_6_5": {
+   "closed_form": "(1952/3)*zeta6 + (168/3)*zeta3^2 + (288/3)*zeta5 + (144/3)*zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "9.74e-115",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_7_3": {
+   "closed_form": "(-3776/1)*zeta7 + (-128/1)*zeta2zeta5 + (-128/1)*zeta3zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "2.46e-113",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_7_4": {
+   "closed_form": "(-10004/1)*zeta7 + (-2304/1)*zeta2zeta5 + (-3816/1)*zeta3zeta4 + (-2720/1)*zeta6 + (160/1)*zeta3^2 + (608/1)*zeta5 + (-96/1)*zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "4.86e-112",
+   "null_relation_after_perturbation": [
+    -23,
+    -660401,
+    -42680,
+    286473,
+    -250982,
+    -63640,
+    -133049,
+    -74965,
+    77848,
+    292518,
+    94189,
+    -74130
+   ]
+  },
+  "c_7_5": {
+   "closed_form": "(-6202/1)*zeta7 + (-2112/1)*zeta2zeta5 + (-3568/1)*zeta3zeta4 + (-2992/1)*zeta6 + (-256/1)*zeta3^2 + (-704/1)*zeta5 + (288/1)*zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "1.75e-112",
+   "null_relation_after_perturbation": [
+    -3,
+    180005,
+    77585,
+    -158203,
+    130591,
+    -144940,
+    47578,
+    10365,
+    -125658,
+    -291116,
+    117842,
+    135833
+   ]
+  },
+  "c_7_6": {
+   "closed_form": "(-1280/1)*zeta7 + (-320/1)*zeta2zeta5 + (-256/1)*zeta3zeta4 + (-320/1)*zeta6 + (-192/1)*zeta5 + (-96/1)*zeta4",
+   "verdict": "PASS",
+   "basis": [
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "5.4e-113",
+   "null_relation_after_perturbation": [
+    -265,
+    -549241,
+    -71973,
+    -27507,
+    -162435,
+    -557528,
+    337524,
+    635501,
+    -31696,
+    -105301,
+    -580736,
+    451314
+   ]
+  },
+  "c_8_3": {
+   "closed_form": "(16256/1)*zeta8 + (256/1)*zeta3zeta5",
+   "verdict": "PASS",
+   "basis": [
+    "zeta8",
+    "zeta3zeta5",
+    "zeta2zeta3^2",
+    "zeta53"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "6.38e-113",
+   "null_relation_after_perturbation": "None"
+  },
+  "c_8_4": {
+   "closed_form": null,
+   "verdict": "NO RELATION (find step)",
+   "basis": [
+    "zeta8",
+    "zeta3zeta5",
+    "zeta2zeta3^2",
+    "zeta53",
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": null,
+   "null_relation_after_perturbation": null
+  },
+  "c_8_5": {
+   "closed_form": null,
+   "verdict": "NO RELATION (find step)",
+   "basis": [
+    "zeta8",
+    "zeta3zeta5",
+    "zeta2zeta3^2",
+    "zeta53",
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": null,
+   "null_relation_after_perturbation": null
+  },
+  "c_8_6": {
+   "closed_form": null,
+   "verdict": "NO RELATION (find step)",
+   "basis": [
+    "zeta8",
+    "zeta3zeta5",
+    "zeta2zeta3^2",
+    "zeta53",
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": null,
+   "null_relation_after_perturbation": null
+  },
+  "c_8_7": {
+   "closed_form": null,
+   "verdict": "FAIL holdout",
+   "basis": [
+    "zeta8",
+    "zeta3zeta5",
+    "zeta2zeta3^2",
+    "zeta53",
+    "zeta7",
+    "zeta2zeta5",
+    "zeta3zeta4",
+    "zeta6",
+    "zeta3^2",
+    "zeta5",
+    "zeta2zeta3",
+    "zeta4",
+    "zeta3",
+    "zeta2",
+    "1"
+   ],
+   "find_digits": 66,
+   "trusted_digits": 110,
+   "holdout_residual": "5.22e-61",
+   "null_relation_after_perturbation": [
+    -2,
+    8600,
+    6096,
+    -5797,
+    -10783,
+    -15477,
+    -11279,
+    1450,
+    25666,
+    -3213,
+    -6408,
+    3886,
+    8959,
+    2015,
+    5832,
+    3066
+   ]
+  }
+ },
+ "exact_results": {
+  "c53": "-192 zeta(5) - 32 zeta(2) zeta(3)",
+  "c54": "-132 zeta(5) - 48 zeta(2) zeta(3) - 24 zeta(4)",
+  "c63": "992 zeta(6) + 32 zeta(3)^2",
+  "c64": "(6653 zeta(6) + 696 zeta(3)^2 + 912 zeta(5) - 144 zeta(4))/3",
+  "c65": "1952/3 zeta(6) + 56 zeta(3)^2 + 96 zeta(5) + 48 zeta(4)",
+  "C3_all_d_closed_form": "coefficient of qbar^6 = (1/d)[H(4/d) - 2 H(2/d)] + (1/d^2)[H^(2)(2/d) + 2 H(2/d)^2], H(x)=psi(1+x)+gamma, H^(2)(x)=zeta(2)-zeta(2,1+x); fitted on 21 points, holdout 379 complex-d points max rel residual 1.2e-99 (and 3e-112 on real d); reproduces d=4 value (24 ln^2 2 - pi^2)/48 of arXiv:1904.12862 analytically",
+  "c_m3_all_m": "c_{m,3} = (-1)^m [ (4^(m-1) - (m+3) 2^(m-2)) zeta(m) + 2^(m-1) sum_{j=2}^{m-2} zeta(j) zeta(m-j) ]  (agrees with computed c_{m,3}, m=3..26, to >=99 digits)"
+ },
+ "c53_equals_c54": {
+  "answer": "NO",
+  "c54_minus_c53": "4.603038094778141092344473406672011263516",
+  "exact_difference": "60 zeta(5) - 16 zeta(2) zeta(3) - 24 zeta(4)",
+  "in_units_16zeta5": "0.27744447913235442689"
+ },
+ "mirror_symmetry_c_{m+1,m}_vs_c_{m+1,3}": {
+  "m=4: c54 vs c53": "differ (above)",
+  "m=5: c65 vs c63": [
+   "894.364483422063236793991",
+   "1055.44242303844984208203"
+  ],
+  "verdict": "speculated symmetry of 2308.01371 l.260 is false"
+ },
+ "radius_of_1/d_series": {
+  "q^4 (j=2)": "ratio -> -2 (|d|>2, known)",
+  "q^6 (j=3)": "ratio -> -4: converges only for d>4; diverges at d=4 and d=3 (proven by closed form: pole of H(4/d) at d=-4)",
+  "q^8 (j=4)": "ratio -> -6.000 (numerical, m<=26); amplitude -> 3/32",
+  "q^10 (j=5)": "ratio -> -8.0 (numerical); amplitude -> ~1/36"
+ },
+ "published_estimates_check": {
+  "c53 integral -15.814": "agrees (-15.81377)",
+  "c53 Pade -15.502": "off by 2.0%",
+  "c54 Pade -15.548": "off by 0.08% (true -15.53633)",
+  "c63 32.420": "agrees (32.42031)",
+  "c65 Pade 27.546": "off by 0.27% (true 27.47243)"
+ },
+ "prior_art_recheck": {
+  "inspire_recid_2308.01371": 2685077,
+  "inspire_citers_total": 20,
+  "citation_count_field": 20,
+  "closest": "Arnaudo arXiv:2602.06120 v2 (OPENED, sec. III + discussion): general-d STRUCTURE only (coloured MZVs at roots of unity), explicit d=4 to q^10 and d=3 to q^6; says large-d emergence 'remains to be understood'; no c_{5,3}, no all-d closed form",
+  "other_citers": "titles screened (pole-skipping, spectral duality, axion, Kerr etc.); none about large-d hydro coefficients",
+  "zenodo": "phrase queries ('pole skipping', 'shear'+'black brane', 'quasinormal'+'large D', etc.): no relevant record",
+  "arxiv_api": "abs-searches for large-D + hydrodynamic/shear, 1/d expansion + quasinormal: only 2014-2018 large-D membrane/QNM papers; none with these coefficients",
+  "verdict": "exact c_{5,3}, c_{5,4}, c_{6,j} and the all-d q^6 closed form not found in the literature checked"
+ }
+}

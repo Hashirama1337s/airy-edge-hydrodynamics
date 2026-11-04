@@ -1,0 +1,40 @@
+C1 FAILED/INCOMPLETE {'c_2_2': 0.0, 'c_3_2': 0.0, 'c_3_3': 0.0, 'c_4_2': 0.0, 'c_4_4': 0.0, 'c_5_2': 0.0, 'c_5_5': 0.0, 'c_6_2': 0.0, 'c_6_6': 0.0, 'c_7_2': 0.0, 'c_7_7': 0.0, 'c_4_3': 0.0, 'C2(d=100)_vs_H_{2/d}/d': 0.0, 'd=4_N=4SYM_q^4,q^6,q^8_vs_arXiv:1904.12862_eq4.14': 0.0, 'cross_radius_rho1/32_vs_rho1/48': 0.0, 'identify_tool_positive_control': 0.0}
+P1 HOLDS -15.813774567204840281 window [-16.13, -15.19]
+P2 HOLDS -15.536330088072485854 window [-16.01, -15.08]
+DESCRIPTIVE c53 vs c54: {'answer': 'NO', 'c54_minus_c53': '4.603038094778141092344473406672011263516', 'exact_difference': '60 zeta(5) - 16 zeta(2) zeta(3) - 24 zeta(4)', 'in_units_16zeta5': '0.27744447913235442689'}
+DESCRIPTIVE identifications: {
+ "c_5_3": {
+  "closed_form": "(-192/1)*zeta5 + (-32/1)*zeta2zeta3",
+  "verdict": "PASS",
+  "basis": [
+   "zeta5",
+   "zeta2zeta3"
+  ],
+  "find_digits": 66,
+  "trusted_digits": 110,
+  "holdout_residual": "1.09e-114",
+  "null_relation_after_perturbation": "None"
+ },
+ "c_5_4": {
+  "closed_form": "(132/-1)*zeta5 + (48/-1)*zeta2zeta3 + (24/-1)*zeta4",
+  "verdict": "PASS",
+  "basis": [
+   "zeta5",
+   "zeta2zeta3",
+   "zeta4",
+   "zeta3",
+   "zeta2",
+   "1"
+  ],
+  "find_digits": 66,
+  "trusted_digits": 110,
+  "holdout_residual": "6.44e-114",
+  "null_relation_after_perturbation": "None"
+ },
+ "c_6_3": {
+  "closed_form": "(992/1)*zeta6 + (32/1)*zeta3^2",
+  "verdict": "PASS",
+  "basis": [
+   "zeta6",
+   "zeta3^2"
+  ],
