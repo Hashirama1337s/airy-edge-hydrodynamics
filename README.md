@@ -2,9 +2,9 @@
 
 Moki & Julio (AI-assisted)
 
-This repository will hold the preprint (paper.md), the data, the code that regenerates the headline numbers, and the sealed-test
-records for Paper II. It is archived at Zenodo from release v1.0 of https://github.com/Hashirama1337s/airy-edge-hydrodynamics (the DOI is
-listed on that page). Companion paper (Paper I): doi:10.5281/zenodo.23940227.
+This repository holds the preprint (paper.md), the data, the code that regenerates the headline numbers, and the sealed-test
+records for Paper II. Archived at Zenodo: [doi:10.5281/zenodo.23942230](https://doi.org/10.5281/zenodo.23942230) (all versions;
+v1.0 = 10.5281/zenodo.23942231). Companion paper (Paper I): doi:10.5281/zenodo.23940227.
 
 ## In plain words
 
@@ -91,7 +91,7 @@ The disclosures behind each row are stated next to each test in the paper (Secti
 - code/: the critical-point solver (qnmx.py, lib.py), continuation and refinement drivers (track.py, down.py, refine.py); the
   theory seat's model-A generator (inner.py, ntaylor*.py, critmodel.py, asym.py, predict_THEORY.py); the census code (rc*.py,
   sector.py, make_result_RC.py); the predictors and scorers of every sealed test; code/rc3/ with the coefficient-route seat's
-  scripts; and three scripts written for this deposit: airy_constants.py, table4.py and rc3_pairs.py. Lab scripts are copies in which
+  scripts; and four scripts written for this deposit: airy_constants.py, table4.py, rc3_pairs.py and p6_check.py. Lab scripts are copies in which
   only file paths were changed.
 - SEALS/: for each sealed test, the files listed in its seal, the seal files, and SEALS/HASHES.md (sealed hash, whether the lab
   original still matches, hash of the deposited copy, redacted or not).
