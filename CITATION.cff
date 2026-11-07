@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192"
 authors:
-  - name: "Moki&Julio"
+  - name: "Moki & Julio"
 date-released: 2026-11-04
 version: "1.0"
 repository-code: "https://github.com/Hashirama1337s/airy-edge-hydrodynamics"
@@ -22,5 +22,5 @@ references:
   - type: article
     title: "The Gregory-Laflamme threshold to order 1/n^12 and its resummation to AdS screening masses"
     authors:
-      - name: "Moki&Julio"
+      - name: "Moki & Julio"
     doi: "10.5281/zenodo.23940227"

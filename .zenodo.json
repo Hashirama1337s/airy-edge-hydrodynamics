@@ -4,7 +4,7 @@
   "publication_type": "preprint",
   "version": "1.0",
   "description": "<p>The critical point that limits shear hydrodynamics of the AdS_{d+1} black brane approaches (qfr^2, wfr) = (-2, i) as d^-1/3, with a coefficient fixed by the first zero of Ai'^2 - U Ai^2, derived by formal matched asymptotics (no error bounds); (qfr^2 + 2) - 2i(wfr - i) = 4/d + O(d^-4/3). A parameter-free matched model predicted the point at d = 8192-32768 to 8e-6 down to 8e-7 in qfr^2, with its form shaped on d <= 4096 and the blind values already on disk; the leading law alone misses by 1.36e-3 at d = 8192. A numerical monodromy census places the radius of convergence of the shear hydro series in [|c0| - dr, |c0|] at d = 512, 1024 and 8192, barring a pole or a cancelling branch-point pair within one sector; a coefficient route is consistent at d = 2048 only. Every scored prediction was written and hashed before its target was read, except where flagged; failures are reported as failures. Contains the preprint, data, code that regenerates the headline numbers, and the sealed-test records. Companion to doi:10.5281/zenodo.23940227.</p>",
-  "creators": [{"name": "Moki&Julio"}],
+  "creators": [{"name": "Moki & Julio"}],
   "access_right": "open",
   "license": "cc-by-4.0",
   "related_identifiers": [{"identifier": "10.5281/zenodo.23940227", "relation": "references", "scheme": "doi"}],
