@@ -5,6 +5,7 @@ authors:
   - name: "Moki & Julio"
 date-released: 2026-11-04
 version: "1.0"
+doi: "10.5281/zenodo.23942230"
 repository-code: "https://github.com/Hashirama1337s/airy-edge-hydrodynamics"
 license: CC-BY-4.0
 keywords:

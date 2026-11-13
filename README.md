@@ -1,19 +1,15 @@
 # The Airy edge: where the fluid picture of a black-hole plasma stops working
 
-**A hot plasma modelled by a black hole behaves like a fluid, but only for ripples up to a certain size. The point that
-sets that limit was known in three and four dimensions. We followed it out to 32768 dimensions and found that it creeps
-towards a fixed spot at a rate of one over the cube root of the dimension, with a coefficient taken from a classic
-function of physics, the Airy function (an approximation without error bounds).**
+**The fluid picture of a black-hole plasma stops working at a point that, followed from 3 to 32768 dimensions, creeps towards a fixed spot as one over the cube root of the dimension, with a coefficient from the Airy function (a formal result, without error bounds).**
 
-Moki & Julio
+[![DOI 10.5281/zenodo.23942230](brand/doi.svg)](https://doi.org/10.5281/zenodo.23942230) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23942230.svg)](https://doi.org/10.5281/zenodo.23942230)
-![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
+Moki & Julio · 2026 · version 1.0
 
 **Read** [paper.md](paper.md) · **Re-run** [REPRODUCE.md](REPRODUCE.md) (Python + mpmath, seconds to minutes) · **Check**
 [SEALS/HASHES.md](SEALS/HASHES.md) · **Companion** [Paper I](https://github.com/Hashirama1337s/large-d-gregory-laflamme)
 
-## The story in a minute
+## In plain words
 
 Holography is a way of modelling a hot plasma with a black hole in one extra dimension (here a flat "black brane" in
 anti-de Sitter space, a curved space-time that acts like a box with a boundary). Stir such a plasma gently, with long, slow ripples, and it flows like a fluid. Physicists write
@@ -42,56 +38,11 @@ dimensional world and d = 3 a flat, two-dimensional one; thousands of dimensions
 equations simpler, and they test the formula where it should be best.
 
 Every scored prediction was written down and hashed before its answer was read, except where the scorecards flag
-otherwise. That exception matters for the headline test (Step 3). Failures are listed as failures.
+otherwise. That exception matters for the headline test (see "At a glance"). Failures are listed as failures.
 
-## Climb the ladder
+## At a glance
 
-### Step 1 - the idea (for anyone)
-
-A series around zero works inside a circle whose edge is set by the nearest trouble spot. Find the trouble spot and you
-know how far the fluid series for the ripple frequency can be pushed.
-
-```mermaid
-flowchart LR
-  A[Plasma ripples<br/>fluid series in the wavenumber] --> B[Series works only inside<br/>a circle around zero]
-  B --> C[Edge = collision point c0<br/>slow ripple meets a fast one]
-  C --> D[Followed c0 from<br/>d = 3 to d = 32768]
-  D --> E[c0 creeps to a fixed spot<br/>as d to the power -1/3]
-  E --> F[Coefficient from the first<br/>zero of Ai'^2 - U Ai^2]
-```
-
-The fixed spot, written in thermal units as (qfr^2, wfr) = (-2, i), was not new: earlier work (2023) found qfr^2 = -2
-as the singularity of a partially summed series at large d. What is new is how c0 approaches it, and the coefficient.
-
-### Step 2 - how it works (for a curious student)
-
-Measure the wavenumber q and the frequency omega in units of the plasma temperature: qfr = q/(2 pi T) and
-wfr = omega/(2 pi T). Write q2 = qfr^2. The fluid series is a series in q2 about q2 = 0, and it works for |q2| < |c0|,
-if c0 is the nearest trouble spot.
-
-A textbook example of the same effect (not from this repo): the series for 1/(1 + x^2) is 1 - x^2 + x^4 - ... It stops
-working at |x| = 1, although the function is smooth on the whole real line, because it blows up at the complex points
-x = i and x = -i.
-
-The law says that, as d grows,
-
-    qfr_c^2 + 2 = A d^(-1/3) + ...,    wfr_c - i = B d^(-1/3) + ...,
-    A = 1.021165 + 5.400669i,         B = 2.700334 - 0.510583i.
-
-A and B come from U1 = -2.790298 + 1.094310i, the first zero (with positive imaginary part) of W(U) = Ai'(U)^2 - U Ai(U)^2,
-where Ai' is the slope of Ai. The Airy function Ai is the classic solution of y'' = U y; it appears wherever a wave meets a turning point.
-
-A worked example at d = 8192. The numerically computed critical point is c0 = -1.948369 + 0.268858i, so |c0| = 1.96683:
-the fluid series in q2 reaches about that far. The leading law alone, -2 + A/8192^(1/3), misses it by 0.0014. A fuller
-model built from the same derivation (model A, which adds the first 1/d correction and has no fitted parameters) misses
-by 8.1e-6 (form shaped on d <= 4096, answers already on disk; see Step 3). The accuracy belongs to that full model, not
-to the leading Airy term.
-
-Where do the numbers come from? The c0 values are numerical: a separate seat solved the equations and refined them at
-150 bits, and a deposit script (`code/table4.py`) re-checks them at 110 bits. The law and model A are analytic, except
-that one input of model A, a slope equal to minus zeta(3) = -(1 + 1/8 + 1/27 + ...), was identified numerically.
-
-### Step 3 - the real thing (for specialists)
+*The exact claims, for specialists. Terms are explained in "How it works" and "Words you will meet".*
 
 - **Law.** For the shear channel of the planar AdS_{d+1} Schwarzschild black brane, the level-crossing critical point c0
   approaches (qfr^2, wfr) = (-2, i) as d^(-1/3), with A = -4 T1 2^(-1/3), B = 2i T1 2^(-1/3), T1 = Ai'(U1)/Ai(U1); no
@@ -115,7 +66,74 @@ scorecard:
 
 ![Scorecard of every sealed test](scorecard.svg)
 
-## Use it as a tool
+Full technical record: [TECHNICAL.md](TECHNICAL.md).
+
+## What we do not claim
+
+- The Airy law comes from formal matched asymptotics with no error bounds. The input N1_t = -zeta(3) of model A is
+  numerically identified. "On the hydro sheet" depends on the path convention (radial continuation from q2 ~ 0).
+- The forward-test accuracy (8e-6 down to 8e-7) belongs to the full model A, which was shaped on d <= 4096. The computed
+  answers were already on disk, so independence rests on the theory seat's self-report.
+- The radius statement holds only at the listed d: monodromy at 512, 1024 and 8192 (blind to a thin band below |c0|, to
+  poles and to cancelling branch-point pairs inside one sector; one solver family; scorer written after the data); the
+  coefficient route is consistent at 2048 only; at 8192 it does not confirm, and the repair test was VOID.
+- The radius is that of the series for the ripple frequency wfr(q2), not of the fluid's constitutive relations (how
+  fluxes depend on densities); the two can differ.
+- Whether c0 is the nearest trouble spot for every 4 < d < 512 is open (checked at d = 4 by others and at d = 256 here).
+- One channel (shear) and one background (the neutral planar brane). Below the edge: agreement within sealed bars, not
+  exactness, and the Pade convergence is not proved.
+- Several sealed tests FAILED (BAR-DYN1 P1, P2; BAR-DYN1b P5; BAR-THEORY T4 as sealed; BAR-RC2 P1, P2; BAR-RC3 P2 under
+  the nearest-pair reading) and one is VOID (BAR-RC3R). BAR-SHEAR C1 printed FAILED/INCOMPLETE (scorer key bug).
+- The internal referee is a separately briefed seat of the same lab, not external peer review.
+
+## How it works
+
+### The idea
+
+A series around zero works inside a circle whose edge is set by the nearest trouble spot. Find the trouble spot and you
+know how far the fluid series for the ripple frequency can be pushed.
+
+```mermaid
+flowchart LR
+  A[Plasma ripples<br/>fluid series in the wavenumber] --> B[Series works only inside<br/>a circle around zero]
+  B --> C[Edge = collision point c0<br/>slow ripple meets a fast one]
+  C --> D[Followed c0 from<br/>d = 3 to d = 32768]
+  D --> E[c0 creeps to a fixed spot<br/>as d to the power -1/3]
+  E --> F[Coefficient from the first<br/>zero of Ai'^2 - U Ai^2]
+```
+
+The fixed spot, written in thermal units as (qfr^2, wfr) = (-2, i), was not new: earlier work (2023) found qfr^2 = -2
+as the singularity of a partially summed series at large d. What is new is how c0 approaches it, and the coefficient.
+
+### A worked example
+
+Measure the wavenumber q and the frequency omega in units of the plasma temperature: qfr = q/(2 pi T) and
+wfr = omega/(2 pi T). Write q2 = qfr^2. The fluid series is a series in q2 about q2 = 0, and it works for |q2| < |c0|,
+if c0 is the nearest trouble spot.
+
+A textbook example of the same effect (not from this repo): the series for 1/(1 + x^2) is 1 - x^2 + x^4 - ... It stops
+working at |x| = 1, although the function is smooth on the whole real line, because it blows up at the complex points
+x = i and x = -i.
+
+The law says that, as d grows,
+
+    qfr_c^2 + 2 = A d^(-1/3) + ...,    wfr_c - i = B d^(-1/3) + ...,
+    A = 1.021165 + 5.400669i,         B = 2.700334 - 0.510583i.
+
+A and B come from U1 = -2.790298 + 1.094310i, the first zero (with positive imaginary part) of W(U) = Ai'(U)^2 - U Ai(U)^2,
+where Ai' is the slope of Ai. The Airy function Ai is the classic solution of y'' = U y; it appears wherever a wave meets a turning point.
+
+A worked example at d = 8192. The numerically computed critical point is c0 = -1.948369 + 0.268858i, so |c0| = 1.96683:
+the fluid series in q2 reaches about that far. The leading law alone, -2 + A/8192^(1/3), misses it by 0.0014. A fuller
+model built from the same derivation (model A, which adds the first 1/d correction and has no fitted parameters) misses
+by 8.1e-6 (form shaped on d <= 4096, answers already on disk; see "At a glance"). The accuracy belongs to that full model, not
+to the leading Airy term.
+
+Where do the numbers come from? The c0 values are numerical: a separate seat solved the equations and refined them at
+150 bits, and a deposit script (`code/table4.py`) re-checks them at 110 bits. The law and model A are analytic, except
+that one input of model A, a slope equal to minus zeta(3) = -(1 + 1/8 + 1/27 + ...), was identified numerically.
+
+## Reproduce and reuse
 
 Questions this lets you answer:
 
@@ -186,24 +204,6 @@ Compare with the computed c0(8192) = -1.94836923521368989578 + 0.268857905752112
 For far better accuracy use model A: its values at d = 2^8 .. 2^27 are in `data/theory/asym.json` (key `model`). The law
 is a large-d statement; at small d it is not accurate.
 
-## What we did not show
-
-- The Airy law comes from formal matched asymptotics with no error bounds. The input N1_t = -zeta(3) of model A is
-  numerically identified. "On the hydro sheet" depends on the path convention (radial continuation from q2 ~ 0).
-- The forward-test accuracy (8e-6 down to 8e-7) belongs to the full model A, which was shaped on d <= 4096. The computed
-  answers were already on disk, so independence rests on the theory seat's self-report.
-- The radius statement holds only at the listed d: monodromy at 512, 1024 and 8192 (blind to a thin band below |c0|, to
-  poles and to cancelling branch-point pairs inside one sector; one solver family; scorer written after the data); the
-  coefficient route is consistent at 2048 only; at 8192 it does not confirm, and the repair test was VOID.
-- The radius is that of the series for the ripple frequency wfr(q2), not of the fluid's constitutive relations (how
-  fluxes depend on densities); the two can differ.
-- Whether c0 is the nearest trouble spot for every 4 < d < 512 is open (checked at d = 4 by others and at d = 256 here).
-- One channel (shear) and one background (the neutral planar brane). Below the edge: agreement within sealed bars, not
-  exactness, and the Pade convergence is not proved.
-- Several sealed tests FAILED (BAR-DYN1 P1, P2; BAR-DYN1b P5; BAR-THEORY T4 as sealed; BAR-RC2 P1, P2; BAR-RC3 P2 under
-  the nearest-pair reading) and one is VOID (BAR-RC3R). BAR-SHEAR C1 printed FAILED/INCOMPLETE (scorer key bug).
-- The internal referee is a separately briefed seat of the same lab, not external peer review.
-
 ## Words you will meet
 
 - **Holography / AdS black brane** - a black hole with a flat (planar) horizon in anti-de Sitter space, used as a model of
@@ -220,120 +220,21 @@ is a large-d statement; at small d it is not accurate.
 - **Pole skipping** - special points where a plasma response is ambiguous; known from earlier work.
 - **Sealed test / seat** - predictions hashed before the answer is read; a seat is one separately briefed computation.
 
+## How to cite
+
+```
+Moki & Julio (2026). The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.23942230
+```
+
+The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.23942231. Machine-readable: [CITATION.cff](CITATION.cff).
+LICENSE (CC BY 4.0, everything except code/), LICENSE-CODE (MIT, code/).
+
+## Related projects
+
+- [large-d-gregory-laflamme](https://github.com/Hashirama1337s/large-d-gregory-laflamme): the Gregory-Laflamme threshold of a black string as an exact large-dimension series
+- [certified-chen-lebrun-weber](https://github.com/Hashirama1337s/certified-chen-lebrun-weber): a certified computed approximation of the Chen-LeBrun-Weber Einstein metric
+- All projects: [the Moki & Julio lab map](https://github.com/Hashirama1337s)
+
 ---
 
-## For specialists: the original README
-
-# The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192
-
-Moki & Julio
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23942230.svg)](https://doi.org/10.5281/zenodo.23942230)
-![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
-
-**At a glance.** Fluid (hydrodynamic) predictions for the AdS black brane work only up to a certain momentum. The point
-that sets that limit approaches (qfr^2, wfr) = (-2, i) as d^(-1/3) when the dimension d grows, with a coefficient from
-the Airy function (formal matched asymptotics, no error bounds). A no-fit model predicted it blind at d = 8192-32768 to
-8e-6 down to 8e-7, and a numerical census at d = 512, 1024 and 8192 found no nearer obstacle. Failures are shown.
-
-**Read** [paper.md](paper.md) · **Re-run** [REPRODUCE.md](REPRODUCE.md) · **Check** [SEALS/HASHES.md](SEALS/HASHES.md) · **Companion** [Paper I](https://github.com/Hashirama1337s/large-d-gregory-laflamme)
-
-![Scorecard of every sealed test](scorecard.svg)
-
-This repository holds the preprint (paper.md), the data, the code that regenerates the headline numbers, and the sealed-test
-records for Paper II. Archived at Zenodo: [doi:10.5281/zenodo.23942230](https://doi.org/10.5281/zenodo.23942230) (all versions;
-v1.0 = 10.5281/zenodo.23942231). Companion paper (Paper I): doi:10.5281/zenodo.23940227.
-
-## In plain words
-
-A hot plasma of the kind studied with holography (a black brane in anti-de Sitter space) behaves like a fluid at long wavelengths.
-The fluid description is a series in powers of the wavenumber, and like many series it only converges up to some size. Past that
-size the series stops working. Where it stops is set by a point where the slow fluid mode collides with one of the fast modes. At
-four dimensions that point was found in 2019.
-
-We followed the same point from three dimensions up to 32768 dimensions. As the number of dimensions d grows, it creeps towards a
-fixed point, at a rate of one over the cube root of d. The coefficient of that approach is set by the first complex zero of a simple
-combination of Airy functions, Ai'^2 - U Ai^2. The formula was derived from the equations, without fitting, but by an approximation
-method that gives no error bounds.
-
-We then tested it. A model built from the derivation predicted where the point sits at d = 8192, 16384 and 32768, and the computed
-values agreed to within 0.000008 at d = 8192, shrinking to 0.0000008 at d = 32768 (in a quantity of size about 2). The model's form
-had been tuned while looking at d up to 4096, and the computed answers were already on disk when the predictions were written, so
-this test rests on the theory seat's word that it did not look. The leading term of the formula alone is off by 0.0014 at d = 8192.
-
-We also checked that this point really is the nearest obstacle, which is what makes it set the size limit. At d = 512, 1024 and 8192
-a map of the complex plane showed nothing closer (up to a thin band and two kinds of feature the map cannot see). A second solver
-family, with exponent and fit model supplied in advance, was consistent at d = 2048. At d = 8192 that second method was ambiguous, and an attempt to settle it was itself badly
-designed, so it counts as void.
-
-The fixed point the edge creeps towards is also where a known "pole-skipping" point of the sound channel ends up at infinite d. The
-two points meet only in that limit, and at different speeds. A 2019 paper concluded from two other examples that pole skipping is
-not directly related to where the fluid series stops. We do not claim a link; we flag the coincidence as an open question.
-
-Below the edge, the same kind of 1/d series predicted how the plasma diffuses momentum and carries sound at 3 to 6 dimensions, within
-the error bars written down beforehand, in every one of 33 sealed cells.
-
-Every scored prediction was written down and hashed before the answer was read, except where the scorecards below flag otherwise.
-Some predictions failed; they are listed as failures.
-
-## Scorecard
-
-HOLDS means the prediction passed the bar written before the data; FAILED and VOID are reported as such. Errors are absolute in
-qfr^2 for the critical point and relative for the poles.
-
-### The law and its forward tests
-
-| Test | Prediction (short) | Verdict | Realised numbers / disclosure |
-|---|---|---|---|
-| BAR-DYN1 C1 | d = 4 control | HOLDS | all 8 published digits; published value was the Newton seed |
-| BAR-DYN1 P1 | census at every d | FAILED | census only at d = 256 |
-| BAR-DYN1 P2 | limit within 0.05 of (-2, i), two fit families | FAILED | 0.011 and 0.107 |
-| BAR-DYN1 P3, P4 | approach exponent; \|q2\| < 2 by d = 1024 | HOLD | 0.339; 1.967 |
-| BAR-DYN1 N1 | null | HOLDS (cannot fail) | - |
-| BAR-DYN1b P1-P4 | fit predictions at d = 8192, 16384, 32768; refit limit | HOLD | 4.2e-5 .. 2.8e-4, about 20x inside bars |
-| BAR-DYN1b P5 | census at d = 512, 1024 | FAILED | d = 1024 annulus uncertified |
-| BAR-DYN1b P6 | closer to d^(-1/3) family than rival | HOLDS | sealed after blind values were on disk |
-| BAR-THEORY T1 | parameter-free model A | HOLDS | 8.1e-6 .. 8.2e-7; independence by self-report; form shaped on d <= 4096 |
-| BAR-THEORY T2, T3, T5 | calibrated model; residual exponent; on-sheet branch point | HOLD | 9.7e-8 .. 1.8e-8; 1.02; swap at 8192 |
-| BAR-THEORY T4 / T4' | 4/d relation within 0.05 / monotone, near 0.069 | FAILED (mis-set before data) / HOLDS | 0.0688 at d = 32768 |
-
-### The radius
-
-| Test | Prediction (short) | Verdict | Realised numbers / disclosure |
-|---|---|---|---|
-| BAR-RC P0 | positive control just outside c0 | PASS at all d | 8192 margin 1.6x |
-| BAR-RC P1-P3 | nothing inside \|c0\| - dr at d = 1024, 512, 8192 | HOLD | <= 9.2e-14; scorer written after data; three code versions |
-| BAR-RC2 P1, P2 | free-exponent radius = \|c0\| to 1% | FAILED | 1.05e-2, 1.68e-2 |
-| BAR-RC3 SPC, P1 | synthetic control; radius at d = 2048 | PASS; HOLDS | 6.5e-6; 1.1e-5; exponent and model supplied |
-| BAR-RC3 P2 | radius at d = 8192 | HOLDS as printed; nearest-pair reading FAILED | 5.3e-5 reported pair; 7.95e-3 nearest pair |
-| BAR-RC3R | third-circle check at d = 8192 | VOID (inner control FAILED) | bar ignored aliasing; descriptive reading post hoc |
-
-### Below the edge (appendix)
-
-| Test | Prediction (short) | Verdict | Realised numbers / disclosure |
-|---|---|---|---|
-| BAR-DYN2 | shear diffusion pole, 17 cells at d = 3..6 | 17/17 HOLD | 16 fresh; 2.2-17 digits; independence medium |
-| BAR-DYN3 | sound pole, 16 cells at d = 3..6 | 16/16 HOLD | 15 fresh + 1 control; all within 1 x bar |
-| BAR-SHEAR P1, P2 | two shear coefficients vs published estimates | HOLD | closed forms identified (descriptive) |
-| BAR-SHEAR C1 | controls | printed FAILED/INCOMPLETE | scorer key bug |
-
-The disclosures behind each row are stated next to each test in the paper (Sections 4-5, Appendices B-D).
-
-## Release contents
-
-- paper.md: the preprint.
-- data/: the blind tracked critical points (d = 4..32768, the d = 3 continuation and the high-precision refinements); the theory
-  seat's model files and predictions; the monodromy-census results at d = 512, 1024 and 8192; the Cauchy coefficients, ladder fits and
-  results of the coefficient route (RC2, RC3, RC3R); the predictions and blind poles of the two pole tests. data/REDACTED.md lists the
-  data files changed by redaction.
-- code/: the critical-point solver (qnmx.py, lib.py), continuation and refinement drivers (track.py, down.py, refine.py); the
-  theory seat's model-A generator (inner.py, ntaylor*.py, critmodel.py, asym.py, predict_THEORY.py); the census code (rc*.py,
-  sector.py, make_result_RC.py); the predictors and scorers of every sealed test; code/rc3/ with the coefficient-route seat's
-  scripts; and four scripts written for this deposit: airy_constants.py, table4.py, rc3_pairs.py and p6_check.py. Lab scripts are copies in which
-  only file paths were changed.
-- SEALS/: for each sealed test, the files listed in its seal, the seal files, and SEALS/HASHES.md (sealed hash, whether the lab
-  original still matches, hash of the deposited copy, redacted or not).
-- REPRODUCE.md: commands, captured outputs and run times. MANIFEST.sha256: hashes of all files.
-- LICENSE (CC BY 4.0, everything except code/), LICENSE-CODE (MIT, code/), CITATION.cff, .zenodo.json.
-
-*Prepared with AI assistance; all results are machine-checked.*
+*Prepared with AI assistance; what was checked, and by what, is stated above.*
