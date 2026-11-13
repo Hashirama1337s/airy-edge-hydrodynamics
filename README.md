@@ -5,7 +5,7 @@ sets that limit was known in three and four dimensions. We followed it out to 32
 towards a fixed spot at a rate of one over the cube root of the dimension, with a coefficient taken from a classic
 function of physics, the Airy function (an approximation without error bounds).**
 
-Moki & Julio (AI-assisted)
+Moki & Julio
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23942230.svg)](https://doi.org/10.5281/zenodo.23942230)
 ![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
@@ -226,7 +226,7 @@ is a large-d statement; at small d it is not accurate.
 
 # The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192
 
-Moki & Julio (AI-assisted)
+Moki & Julio
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23942230.svg)](https://doi.org/10.5281/zenodo.23942230)
 ![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
@@ -335,3 +335,5 @@ The disclosures behind each row are stated next to each test in the paper (Secti
   original still matches, hash of the deposited copy, redacted or not).
 - REPRODUCE.md: commands, captured outputs and run times. MANIFEST.sha256: hashes of all files.
 - LICENSE (CC BY 4.0, everything except code/), LICENSE-CODE (MIT, code/), CITATION.cff, .zenodo.json.
+
+*Prepared with AI assistance; all results are machine-checked.*

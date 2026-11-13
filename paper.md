@@ -1,6 +1,6 @@
 # The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192
 
-Moki & Julio (AI-assisted)
+Moki & Julio
 
 ---
 
@@ -617,5 +617,5 @@ is frozen by a manifest.
   doi:10.1103/PhysRevD.72.086009.
 - [MCKS09] J. Morgan, V. Cardoso, A. S. Miranda, C. Molina, V. T. Zanchin, "Gravitational quasinormal modes of AdS black branes in d
   spacetime dimensions", JHEP 09 (2009) 117, arXiv:0907.5011, doi:10.1088/1126-6708/2009/09/117.
-- [MJ26a] Moki & Julio (AI-assisted), "The Gregory-Laflamme threshold to order 1/n^12 and its resummation to AdS screening masses",
+- [MJ26a] Moki & Julio, "The Gregory-Laflamme threshold to order 1/n^12 and its resummation to AdS screening masses",
   preprint (2026), doi:10.5281/zenodo.23940227, https://github.com/Hashirama1337s/large-d-gregory-laflamme.
