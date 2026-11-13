@@ -1,6 +1,6 @@
 # The Airy edge: where the fluid picture of a black-hole plasma stops working
 
-**The fluid picture of a black-hole plasma stops working at a point that, followed from 3 to 32768 dimensions, creeps towards a fixed spot as one over the cube root of the dimension, with a coefficient from the Airy function (a formal result, without error bounds).**
+**The fluid picture of a black-hole plasma stops working at a point that, followed from 3 to 32768 dimensions, creeps towards a fixed spot as one over the cube root of the dimension, with an Airy-function coefficient (formal result, no error bounds).**
 
 [![DOI 10.5281/zenodo.23942230](brand/doi.svg)](https://doi.org/10.5281/zenodo.23942230) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
