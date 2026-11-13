@@ -20,10 +20,9 @@ In 2019 Grozdanov, Kovtun, Starinets and Tadić showed what sets the size: a poi
 with one of the plasma's other, faster-decaying ripples. For a plasma in our 3 + 1 dimensional world (d = 4) they located
 that point; for d = 3 it was located in 2022.
 
-A picture that helps (it is only a picture): you can trust a road map only up to the nearest pothole, even if the
+![](brand/icon-picture.svg) **The idea in one picture.** You can trust a road map only up to the nearest pothole, even if the
 pothole sits off to the side of the road you drive on. Here the "side" is mathematical: the trouble spot sits at a
-*complex* wavenumber (a number with two parts, written a + bi, where i times i is -1), not on any real road. Where the
-picture breaks: a map has no single centre, while this series is built around zero wavenumber, so the limit is a circle
+*complex* wavenumber (a number with two parts, written a + bi, where i times i is -1), not on any real road. **Where the picture breaks.** A map has no single centre, while this series is built around zero wavenumber, so the limit is a circle
 of trust around zero.
 
 We followed that collision point, which we call c0, from d = 3 up to d = 32768. As d grows it creeps towards a fixed

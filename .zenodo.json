@@ -3,10 +3,34 @@
   "upload_type": "publication",
   "publication_type": "preprint",
   "version": "1.0",
-  "description": "<p>The critical point that limits shear hydrodynamics of the AdS_{d+1} black brane approaches (qfr^2, wfr) = (-2, i) as d^-1/3, with a coefficient fixed by the first zero of Ai'^2 - U Ai^2, derived by formal matched asymptotics (no error bounds); (qfr^2 + 2) - 2i(wfr - i) = 4/d + O(d^-4/3). A parameter-free matched model predicted the point at d = 8192-32768 to 8e-6 down to 8e-7 in qfr^2, with its form shaped on d <= 4096 and the blind values already on disk; the leading law alone misses by 1.36e-3 at d = 8192. A numerical monodromy census places the radius of convergence of the shear hydro series in [|c0| - dr, |c0|] at d = 512, 1024 and 8192, barring a pole or a cancelling branch-point pair within one sector; a coefficient route is consistent at d = 2048 only. Every scored prediction was written and hashed before its target was read, except where flagged; failures are reported as failures. Contains the preprint, data, code that regenerates the headline numbers, and the sealed-test records. Companion to doi:10.5281/zenodo.23940227.</p>",
-  "creators": [{"name": "Moki & Julio"}],
+  "description": "<p><b>In plain words.</b> \nHolography is a way of modelling a hot plasma with a black hole in one extra dimension. Stirred gently, such a plasma flows like a fluid, and physicists write that fluid behaviour as a series. The series only works up to a certain point. In 2019 Grozdanov, Kovtun, Starinets and Tadić showed what sets it: a collision between the slow fluid ripple and one of the plasma's faster-decaying ripples. We followed that collision point from 3 up to 32768 dimensions. It creeps towards a fixed spot at a rate of one over the cube root of the dimension, with a coefficient given by Airy functions. The formula was derived without fitting, by a method that gives no error bounds. The headline forward test was not a blind test in the strict sense, as the record states. Failures are listed as failures.</p>\n<p><b>The idea in one picture.</b> you can trust a road map only up to the nearest pothole, even if the pothole sits off to the side of the road you drive on. Here the 'side' is mathematical: the trouble spot sits at a complex wavenumber, not on any real road. <b>Where the picture breaks.</b> a map has no single centre, while this series is built around zero wavenumber, so the limit is a circle of trust around zero.</p>\n<p><b>For specialists.</b> The critical point that limits shear hydrodynamics of the AdS_{d+1} black brane approaches (qfr^2, wfr) = (-2, i) as d^-1/3, with a coefficient fixed by the first zero of Ai'^2 - U Ai^2, derived by formal matched asymptotics (no error bounds); (qfr^2 + 2) - 2i(wfr - i) = 4/d + O(d^-4/3). A parameter-free matched model predicted the point at d = 8192-32768 to 8e-6 down to 8e-7 in qfr^2, with its form shaped on d &lt;= 4096 and the blind values already on disk; the leading law alone misses by 1.36e-3 at d = 8192. A numerical monodromy census places the radius of convergence of the shear hydro series in [|c0| - dr, |c0|] at d = 512, 1024 and 8192, barring a pole or a cancelling branch-point pair within one sector; a coefficient route is consistent at d = 2048 only. Every scored prediction was written and hashed before its target was read, except where flagged; failures are reported as failures. Contains the preprint, data, code that regenerates the headline numbers, and the sealed-test records. Companion to doi:10.5281/zenodo.23940227.</p>\n<p><b>Links.</b> Repository, with a plain-language guide: <a href=\"https://github.com/Hashirama1337s/airy-edge-hydrodynamics\">github.com/Hashirama1337s/airy-edge-hydrodynamics</a>. All projects: <a href=\"https://github.com/Hashirama1337s\">the Moki &amp; Julio lab map</a>.</p>\n<p><i>Prepared with AI assistance; what was checked, and by what, is stated above.</i></p>",
+  "creators": [
+    {
+      "name": "Moki & Julio"
+    }
+  ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "related_identifiers": [{"identifier": "10.5281/zenodo.23940227", "relation": "references", "scheme": "doi"}],
-  "keywords": ["large D", "holography", "hydrodynamics", "radius of convergence", "quasinormal modes", "level crossing", "Airy function", "black brane", "pole skipping", "pre-registered tests"]
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23940227",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "keywords": [
+    "large D",
+    "holography",
+    "hydrodynamics",
+    "radius of convergence",
+    "quasinormal modes",
+    "level crossing",
+    "Airy function",
+    "black brane",
+    "pole skipping",
+    "pre-registered tests",
+    "black holes",
+    "AdS/CFT",
+    "large-D expansion"
+  ]
 }

@@ -15,7 +15,12 @@ keywords:
   - radius of convergence
   - quasinormal modes
   - Airy function
+  - black holes
+  - "AdS/CFT"
+  - large-D expansion
 abstract: >-
+  Holography is a way of modelling a hot plasma with a black hole in one extra dimension. Stirred gently, such a
+  plasma flows like a fluid, and physicists write that fluid behaviour as a series.
   Large-d law for the critical point that limits shear hydrodynamics of the AdS black brane: approach to (-2, i) as
   d^(-1/3) with a coefficient from the first zero of Ai'^2 - U Ai^2 (formal matched asymptotics), a no-fit forward test
   at d = 8192-32768, and a numerical radius bound at d = 512, 1024 and 8192. Data, code and sealed-test records included.
