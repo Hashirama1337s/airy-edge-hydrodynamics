@@ -456,6 +456,40 @@ solver family, and the theory seat's Laurent-coefficient and sheet checks.
 
 ---
 
+## Open doors
+
+What this work leaves open, and what we noticed but did not follow up.
+
+- **Nearest-singularity status for 4 < d < 512.** c0 is the nearest hydro-sheet critical point at d = 4 [GKST19a] and at
+  d = 256 (census, Section 4.1), and the radius statement holds at d = 512, 1024, 8192 (Section 5.5); between d = 4 and 256 the
+  branch is a tracked continuation, not a census (Section 6). *Status:* open as far as our dated search found (2026-11-17;
+  INSPIRE, arXiv, Zenodo: no published shear critical point at any d > 4, no large-d nearest-singularity certificate).
+  *Start here:* `data/DYN1/track_c0.jsonl`, `data/DYN1/census_256.json`, `code/sector.py`, `code/rc.py`. *Ceiling:* the
+  radius of the shear hydro series in q2 fixed at every d >= 4.
+- **The ladder.** The further zeros U2 = -4.457445 + 1.026505i, U3 = -5.846242 + 0.979174i, ... of W give a ladder of critical
+  points (Section 3.2; placed on the hydro sheet for radial paths by the derivation, not independently checked); the d = 256
+  census holds 24 critical points with |q2| < 3 (Section 4.1). Whether the rungs follow the d^(-1/3) law with U_n is untested.
+  *Status:* UNTESTED observation from this work. *Start here:* Section 3.2, `data/DYN1/census_256.json`,
+  `code/airy_constants.py`. *Ceiling:* a closed description of the whole ladder.
+- **The sound channel.** A sound-channel analogue of the law has been derived; its forward test is not yet evaluable
+  (Section 8). *Status:* open as far as our dated search found (2026-11-17; INSPIRE, arXiv, Zenodo: no d^(-1/3) approach of
+  the sound critical point). *Start here:* Appendix B.2, `data/DYN3/`. *Ceiling:* a tested sound-channel law and the sound
+  hydro radius at large d.
+- **The merger with pole skipping.** c0 and the sound-channel pole-skipping point [BDGL18 eq. (2.4); GSS17] merge at (-2, i)
+  as d -> infinity, at rates d^(-1/3) and 1/d (Section 7); at d = 3 and 4, pole skipping was found not to be directly related
+  to the convergence radius [GKST19a s.1, s.6; JP20 s.6]. *Status:* open as far as our dated search found (2026-11-17;
+  INSPIRE, arXiv, Zenodo: no statement of the large-d merger). *Start here:* Section 7, Table 4. *Ceiling:* a mechanism for
+  the merger, or a proof that it is a coincidence of the limit.
+- **N1_t and a remainder bound.** The law is formal matched asymptotics without a remainder bound, and N1_t = -zeta(3) is
+  numerically identified (Sections 3.4, 8). *Status:* UNTESTED observation from this work. *Start here:* Sections 3.2-3.4,
+  `code/inner.py`, `code/ntaylor.py`, `code/ntaylor_hi.py`, `code/asym.py`, `data/theory/`. *Ceiling:* the law with N1_t
+  derived and an explicit remainder.
+- **Contact with fixed-d polylogarithm methods.** [Ar26] computes shear transport coefficients with multiple polylogarithms and
+  states that the simplification of the 1/d expansion is not manifest in that description and "its precise emergence remains
+  to be understood". *Status:* open according to Arnaudo 2026 (arXiv:2602.06120, Sec. IV, Discussion; no later answer found
+  in our search of 2026-11-17). *Start here:* Appendix C, Section 3. *Ceiling:* one framework that shows both the fixed-d
+  polylogarithm structure and the large-d Airy law.
+
 ## Appendix A. Methods
 
 ### A.1 Seats and sealed tests

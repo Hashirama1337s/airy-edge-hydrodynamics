@@ -4,7 +4,7 @@
 
 [![DOI 10.5281/zenodo.23942230](brand/doi.svg)](https://doi.org/10.5281/zenodo.23942230) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
-Moki & Julio · 2026 · version 1.0
+Moki & Julio · 2026 · version 1.0.1
 
 **Read** [paper.md](paper.md) · **Re-run** [REPRODUCE.md](REPRODUCE.md) (Python + mpmath, seconds to minutes) · **Check**
 [SEALS/HASHES.md](SEALS/HASHES.md) · **Companion** [Paper I](https://github.com/Hashirama1337s/large-d-gregory-laflamme)
@@ -31,6 +31,10 @@ Airy functions, Ai'^2 - U Ai^2. The formula was derived from the equations, with
 that gives no error bounds. The Airy turning point itself was known for large-D black holes since 2014 (Emparan, Suzuki,
 Tanabe), and the Airy layer of this black brane at zero wavenumber since 2018; we extend it to complex wavenumber and
 to the collision.
+
+![The trouble spot c0 in the plane of complex wavenumber squared, tracked from d = 3 to d = 32768: it arcs over the top of the plane and settles towards the fixed spot -2, where a zoom shows it following the Airy law](figures/c0-track.svg)
+
+*The trouble spot c0 (the collision point that limits the fluid series wherever a full search was made) in the plane of complex wavenumber squared, followed continuously from d = 3 to d = 32768. The line joins the computed points; it is a tracked continuation, checked by a full search for trouble spots only at d = 4 (by others), 256, 512, 1024 and 8192. As d grows, c0 creeps towards the fixed spot qfr^2 = -2 (white ring), which was known before. The zoom shows the end of the track with the leading Airy law -2 + A d^(-1/3) (blue), derived without fitting by an approximation method that gives no error bounds, and drawn for d >= 256; the law is a large-d statement and is not meant to work at small d.*
 
 Why "d = 32768"? The equations can be solved for any number of dimensions d. d = 4 is a plasma in our 3 + 1
 dimensional world and d = 3 a flat, two-dimensional one; thousands of dimensions are a mathematical lever that makes the
@@ -92,6 +96,10 @@ Full technical record: [TECHNICAL.md](TECHNICAL.md).
 A series around zero works inside a circle whose edge is set by the nearest trouble spot. Find the trouble spot and you
 know how far the fluid series for the ripple frequency can be pushed.
 
+![At d = 8192 the fluid series works inside a circle around zero whose edge is set by c0 and its mirror image, which sit off the real line of wavenumbers; the green circle through them has radius 1.9668, and a numerical census places the radius between 1.9648 and 1.9668](figures/circle-of-trust-d8192.svg)
+
+*At d = 8192. The fluid series is a series in qfr^2 around zero, so it works inside a circle whose edge is set by the nearest trouble spot. The green circle passes through c0 and its mirror image (orange crosses), where two ripples of the plasma collide; its radius is |c0| = 1.9668. Neither cross lies on the blue line of real wavenumbers, yet they limit the series there too. A numerical census of the whole disc (one solver family) places the radius between 1.9648 and 1.9668, barring a pole or a cancelling pair of trouble spots inside one sector; the upper end assumes the trouble spot the census found is c0 itself. Such a census exists only at d = 512, 1024 and 8192.*
+
 ```mermaid
 flowchart LR
   A[Plasma ripples<br/>fluid series in the wavenumber] --> B[Series works only inside<br/>a circle around zero]
@@ -121,6 +129,10 @@ The law says that, as d grows,
 
 A and B come from U1 = -2.790298 + 1.094310i, the first zero (with positive imaginary part) of W(U) = Ai'(U)^2 - U Ai(U)^2,
 where Ai' is the slope of Ai. The Airy function Ai is the classic solution of y'' = U y; it appears wherever a wave meets a turning point.
+
+![Log-log plot of the distance from c0 to the fixed spot -2 against d: from d = 256 on, the computed track and the Airy law with slope -1/3 lie almost on top of each other](figures/c0-approach-rate.svg)
+
+*How far c0 is from the fixed spot qfr^2 = -2, against the number of dimensions d (both axes on log scales). The green line joins the computed points of the track. The blue dashed line is the leading Airy law, distance = |A| d^(-1/3) with |A| = 5.4964 from the first complex zero of Ai'^2 - U Ai^2; nothing in it was fitted to the track (formal matched asymptotics, no error bound proved). It is drawn only for d >= 256 because it is a large-d formula. At d = 32768 the computed distance is 0.1720 and the law alone gives 0.1718.*
 
 A worked example at d = 8192. The numerically computed critical point is c0 = -1.948369 + 0.268858i, so |c0| = 1.96683:
 the fluid series in q2 reaches about that far. The leading law alone, -2 + A/8192^(1/3), misses it by 0.0014. A fuller
@@ -219,14 +231,56 @@ is a large-d statement; at small d it is not accurate.
 - **Pole skipping** - special points where a plasma response is ambiguous; known from earlier work.
 - **Sealed test / seat** - predictions hashed before the answer is read; a seat is one separately briefed computation.
 
+## Open doors
+
+What this work leaves open, and what we noticed along the way but did not follow up, for anyone who wants to take the next step.
+
+- **Is c0 the edge at every dimension between 4 and 512?** The fluid series stops at the nearest trouble spot. That c0 is the
+  nearest one was checked at d = 4 (by others) and at d = 256 (by a census here), and the radius was checked numerically at
+  d = 512, 1024 and 8192; in between we only followed c0 continuously, which cannot rule out another trouble spot coming
+  closer. *Status:* open as far as our dated search found (17 November 2026; INSPIRE, arXiv and Zenodo: no published shear
+  critical point at any d > 4 and no large-d census of the nearest one). *Start here:* the track `data/DYN1/track_c0.jsonl`,
+  the census `data/DYN1/census_256.json`, and the census code `code/sector.py` and `code/rc.py`. *Ceiling:* the radius of
+  the fluid series settled at every d from 4 up.
+- **The other rungs of the ladder.** The further complex zeros of Ai'^2 - U Ai^2 (U2 = -4.457445 + 1.026505i, U3 =
+  -5.846242 + 0.979174i, ...) predict a whole ladder of further critical points behind c0, and the census at d = 256 found 24
+  critical points with |q2| < 3. Whether each rung follows the d^(-1/3) law with its own zero was not checked. *Status:*
+  UNTESTED observation from this work. *Start here:* Section 3.2 of [paper.md](paper.md), `data/DYN1/census_256.json` and
+  `code/airy_constants.py`. *Ceiling:* one formula for the whole ladder of critical points at large d.
+- **An Airy law for sound?** We studied one channel, shear (sideways flow). For the sound channel (pressure waves) an
+  analogue of the law has been derived, but it is not part of this release and its forward test could not yet be
+  evaluated. *Status:* open as far as our dated search found (17 November 2026; INSPIRE, arXiv and Zenodo: no large-d law
+  for the sound-channel critical point). *Start here:* Appendix B.2 of [paper.md](paper.md) and the sound-pole predictions
+  and blind values in `data/DYN3/`. *Ceiling:* a tested large-d law for the sound edge, and with it the reach of the sound
+  fluid series.
+- **Why the two special points meet.** As d grows, c0 and the published sound-channel pole-skipping point (a special point
+  where a plasma response becomes ambiguous) head to the same spot (-2, i), at different rates (d^(-1/3) against 1/d). At
+  d = 3 and 4, earlier studies found that pole skipping is not directly related to the radius of convergence. *Status:*
+  open as far as our dated search found (17 November 2026; INSPIRE, arXiv and Zenodo: no statement that the two points
+  merge at large d). *Start here:* Section 7 and Table 4 of [paper.md](paper.md), and `code/airy_constants.py`.
+  *Ceiling:* a mechanism that links the two points at large d, or a clean argument that the meeting is a coincidence.
+- **Derive the -zeta(3) slope and bound the error.** The law comes from matched asymptotics (stitching solutions from
+  separate zones) without error bounds, and one input of the full model, a slope equal to -zeta(3), was identified
+  numerically rather than derived. *Status:* UNTESTED observation from this work. *Start here:* Sections 3.2-3.4 of
+  [paper.md](paper.md), `code/inner.py`, `code/ntaylor.py`, `code/ntaylor_hi.py`, `code/asym.py` and `data/theory/`.
+  *Ceiling:* the Airy law as a theorem with an explicit bound on what it leaves out.
+- **Meeting the exact fixed-d methods.** A 2026 study computes shear transport coefficients at fixed d with multiple
+  polylogarithms (a family of special functions) and writes that the simplification of the large-d expansion is not
+  visible in that description, so how it emerges "remains to be understood". *Status:* open according to Arnaudo 2026
+  (arXiv:2602.06120, Section IV; no later answer found in our search of 17 November 2026). *Start here:* the exact
+  large-d shear coefficients in Appendix C of [paper.md](paper.md) and the law of Section 3. *Ceiling:* one description of
+  the shear channel in which both the exact fixed-d structure and the large-d Airy behaviour can be seen.
+
 ## How to cite
 
 ```
-Moki & Julio (2026). The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.23942230
+Moki & Julio (2026). The Airy edge of shear hydrodynamics: a large-d law for the critical point of the AdS_{d+1} black brane, with a numerical radius bound at d = 512, 1024 and 8192. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.23942230
 ```
 
 The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.23942231. Machine-readable: [CITATION.cff](CITATION.cff).
 LICENSE (CC BY 4.0, everything except code/), LICENSE-CODE (MIT, code/).
+
+v1.0.1: adds Open doors and figures; no change to the certified results.
 
 ## Related projects
 

@@ -5,6 +5,8 @@ Run every command from the top folder of this deposit (the folder that holds pap
 say where to run them. Create the output folder first: `mkdir out`. The scripts read data/ and write only to out/. Run times are
 those of our check run and will vary.
 
+Figures: `python figures/make_figures.py .` (needs matplotlib 3.11 in addition to mpmath; a few seconds; regenerates the three SVGs in figures/).
+
 | Section | Command | Run time | What it checks |
 |---|---|---|---|
 | 1 | `python code/airy_constants.py` | 2 s | U1-U3, T1, A, B, A = 2iB, leading-law misses (paper s.3.1, s.4.3) |
